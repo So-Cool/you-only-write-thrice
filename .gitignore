@@ -1,0 +1,6 @@
+# Jupyter Book
+_build
+.ipynb_checkpoints
+
+# Mac OS
+.DS_Store

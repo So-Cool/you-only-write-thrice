@@ -1,0 +1,67 @@
+title: 'Interactive ProbLog<br>Book Example'
+author: >
+  <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a>,
+  University of Bristol, United Kingdom
+copyright: '2021'
+logo: src/img/wikidata.svg
+
+exclude_patterns:
+  - .DS_Store
+  - __pycache__
+  - .github
+  - README.md
+
+execute:
+  execute_notebooks: cache
+  timeout: 30
+  allow_errors: false
+  stderr_output: show
+
+html:
+  favicon: src/img/wikidata.svg
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  extra_footer: >
+    This book is a template for building interactive ProbLog books with
+    <a href="https://jupyterbook.org/intro.html">Jupyter Book</a>.
+    The source of this book is available on
+    <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+  extra_navbar: ''
+  google_analytics_id: '268736012'
+  home_page_in_navbar: true
+  baseurl: 'https://so-cool.github.io/you-only-write-thrice/'
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - dollarmath
+    - linkify
+
+repository:
+  url: https://github.com/so-cool/you-only-write-thrice
+
+launch_buttons:
+  notebook_interface: 'classic'  # 'jupyterlab'
+  binderhub_url: 'https://mybinder.org'
+  colab_url: 'https://colab.research.google.com'
+  thebe: true
+
+sphinx:
+  config:
+    html_extra_path:
+      - README.md
+      - LICENCE
+      - .nojekyll
+    numfig_format:
+      figure: 'Figure %s'
+    numfig_secnum_depth: 1
+    nb_custom_formats:
+      .py:
+        - jupytext.reads
+        - fmt: py:percent
+    # Configure Sphinx-copybutton
+    # <https://sphinx-copybutton.readthedocs.io/en/latest/>
+    copybutton_prompt_text: ''
+    copybutton_only_copy_prompt_lines: false
+    copybutton_remove_prompts: false

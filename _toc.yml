@@ -1,0 +1,20 @@
+- file: src/problog_book_template
+
+- part: Bayesian Networks
+  chapters:
+  - file: src/text/bayesian_networks-mnb
+  - url: https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html
+    title: 'Static Slides (Markdown NB)'
+  - file: src/text/bayesian_networks-jnb
+  - url: https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html
+    title: 'Static Slides (Jupyter NB)'
+  - file: src/text/bayesian_networks-pnb
+  - url: https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-pnb.slides.html
+    title: 'Static Slides (Percent NB)'
+
+- part: See Also
+  chapters:
+  - url: https://simply-logical.space/
+    title: 'Simply Logical Organisation'
+  - url: https://github.com/so-cool/you-only-write-thrice/
+    title: 'GitHub Template'
