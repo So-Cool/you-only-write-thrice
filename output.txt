@@ -1,0 +1,8 @@
+src/text/bayesian_networks-jnb.ipynb:110002: [broken] http://www.bnlearn.com/bnrepository/#earthquake: Anchor 'earthquake' not found
+src/problog_book_template.md:60: [broken] https://github.com/so-cool/you-only-write-thrice#building-the-book: Anchor 'building-the-book' not found
+src/problog_book_template.md:18: [redirected with Found] https://ipywidgets.readthedocs.io/ to https://ipywidgets.readthedocs.io/en/stable/
+src/problog_book_template.md:18: [broken] https://jupyterbook.org/interactive/launchbuttons.html#binder-buttons-for-your-pages: Anchor 'binder-buttons-for-your-pages' not found
+src/problog_book_template.md:18: [broken] https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab: Anchor 'live-interactive-pages-with-thebelab' not found
+src/text/bayesian_networks-jnb.ipynb:40020: [redirected permanently] https://mybinder.org/badge_logo.svg to https://static.mybinder.org/badge_logo.svg
+src/text/bayesian_networks-mnb.md:55: [broken] https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html: 404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html
+src/text/bayesian_networks-jnb.ipynb:40020: [broken] https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html: 404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html

@@ -1,0 +1,32 @@
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40002, "status": "unchecked", "code": 0, "uri": "", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://github.com/hakimel/reveal.js/", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 16, "status": "working", "code": 0, "uri": "https://github.com/mwouts/jupytext", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/tutorial/advanced/01_python_interface.html", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice", "info": ""}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 110002, "status": "broken", "code": 0, "uri": "http://www.bnlearn.com/bnrepository/#earthquake", "info": "Anchor 'earthquake' not found"}
+{"filename": "src/problog_book_template.md", "lineno": 60, "status": "broken", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice#building-the-book", "info": "Anchor 'building-the-book' not found"}
+{"filename": "src/problog_book_template.md", "lineno": 51, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/requirements-jb.txt", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/build_slides.sh", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 51, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/requirements.txt", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://ipython.readthedocs.io/en/stable/interactive/magics.html#cell-magics", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "redirected", "code": 302, "uri": "https://ipywidgets.readthedocs.io/", "info": "https://ipywidgets.readthedocs.io/en/stable/", "text": "with Found"}
+{"filename": "src/problog_book_template.md", "lineno": 16, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/jupytext.html", "info": ""}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "working", "code": 0, "uri": "https://img.shields.io/badge/view-slides-blue.svg", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://jupyterbook.org/", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 15, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/myst-notebooks.html", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "broken", "code": 0, "uri": "https://jupyterbook.org/interactive/launchbuttons.html#binder-buttons-for-your-pages", "info": "Anchor 'binder-buttons-for-your-pages' not found"}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "broken", "code": 0, "uri": "https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab", "info": "Anchor 'live-interactive-pages-with-thebelab' not found"}
+{"filename": "src/problog_book_template.md", "lineno": 14, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/notebooks.html", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://pages.github.com/", "info": ""}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "redirected", "code": 301, "uri": "https://mybinder.org/badge_logo.svg", "info": "https://static.mybinder.org/badge_logo.svg", "text": "permanently"}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 350002, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#annotated-disjunctions", "info": ""}
+{"filename": "src/text/bayesian_networks-pnb.py", "lineno": 40019, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-pnb.py", "info": ""}
+{"filename": "src/text/bayesian_networks-mnb.md", "lineno": 55, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-mnb.md", "info": ""}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 130004, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#problog", "info": ""}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 240004, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#probabilistic-clauses", "info": ""}
+{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://rise.readthedocs.io/en/stable/", "info": ""}
+{"filename": "src/text/bayesian_networks-mnb.md", "lineno": 55, "status": "broken", "code": 0, "uri": "https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html", "info": "404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html"}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "broken", "code": 0, "uri": "https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html", "info": "404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html"}
+{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-jnb.ipynb", "info": ""}

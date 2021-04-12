@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayesian Networks (Jupyter NB) &#8212; Interactive ProbLog&lt;br&gt;Book Example</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/problog-book-template.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/src/text/bayesian_networks-jnb.html" />
+    <link rel="shortcut icon" href="../../_static/wikidata.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bayesian Networks (Percent NB)" href="bayesian_networks-pnb.html" />
+    <link rel="prev" title="Bayesian Networks (Markdown NB)" href="bayesian_networks-mnb.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://so-cool.github.io/you-only-write-thrice/src/text/bayesian_networks-jnb.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Bayesian Networks (Jupyter NB)" />
+<meta property="og:description" content="Bayesian Networks (Jupyter NB)  Note  This page is based on the Bayesian networks ProbLog tutorial, which is executed from within Python using the ProbLog libra" />
+<meta property="og:image"       content="https://so-cool.github.io/you-only-write-thrice/_static/wikidata.svg" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/wikidata.svg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Interactive ProbLog<br>Book Example</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../problog_book_template.html">
+   Interactive ProbLog Book Example
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Bayesian Networks
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="bayesian_networks-mnb.html">
+   Bayesian Networks (Markdown NB)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html">
+   Static Slides (Markdown NB)
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Bayesian Networks (Jupyter NB)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html">
+   Static Slides (Jupyter NB)
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bayesian_networks-pnb.html">
+   Bayesian Networks (Percent NB)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-pnb.slides.html">
+   Static Slides (Percent NB)
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  See Also
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference external" href="https://simply-logical.space/">
+   Simply Logical Organisation
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">
+   GitHub Template
+   <i class="fas fa-external-link-alt">
+   </i>
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/src/text/bayesian_networks-jnb.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/so-cool/you-only-write-thrice"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/text/bayesian_networks-jnb.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/text/bayesian_networks-jnb.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-jnb.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/so-cool/you-only-write-thrice/blob/master/src/text/bayesian_networks-jnb.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probabilistic-facts">
+   Probabilistic facts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#probabilistic-clauses">
+   Probabilistic clauses
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#first-order">
+   First-order
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#annotated-disjunctions-dealing-with-multi-valued-variables">
+   Annotated disjunctions: Dealing with multi-valued variables
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="bayesian-networks-jupyter-nb">
+<span id="sec-problog-ipynb"></span><h1>Bayesian Networks (Jupyter NB)<a class="headerlink" href="#bayesian-networks-jupyter-nb" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is based on the <a class="reference external" href="https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html"><em>Bayesian networks</em></a> ProbLog tutorial, which
+is executed from within Python using the <a class="reference external" href="https://dtai.cs.kuleuven.be/problog/tutorial/advanced/01_python_interface.html"><em>ProbLog library</em></a>.</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">Content format</p>
+<p>This page is written in the <a class="reference external" href="https://jupyterbook.org/file-types/notebooks.html"><em>Jupyter Notebook</em></a> format.
+The ProbLog content is executed directly from Python.
+Alternatively, see the <a class="reference internal" href="bayesian_networks-mnb.html"><span class="doc std std-doc">Markdown Notebook version</span></a> of the
+<em>Bayesian Networks</em> tutorial for an example of executing ProbLog code
+with <a class="reference external" href="https://ipywidgets.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">ipywidgets</span></code></a>, or the <a class="reference internal" href="bayesian_networks-pnb.html"><span class="doc std std-doc">Percent Notebook version</span></a> to see
+how ProbLog code can be executed with a bespoke
+<a class="reference external" href="https://ipython.readthedocs.io/en/stable/interactive/magics.html#cell-magics">iPython cell magic command</a>.</p>
+<p>You can execute the code blocks enclosed below by launching this page as a
+Jupyter Notebook with MyBinder – this option is available from the
+<em>Launch Menu</em> that appears after hovering the mouse cursor over the
+<span class="fa fa-rocket"></span> icon shown in the top bar.
+You can also <strong>enable the code cells</strong> to work directly on this page with
+<a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab">Thebe</a> by activating <span class="fa fa-play"></span> <em>Live Code</em> from the
+<span class="fa fa-rocket"></span> <em>Launch Menu</em>.</p>
+<!--https://sphinx-panels.readthedocs.io/en/latest/#link-badgeshttps://sphinx-panels.readthedocs.io/en/latest/#link-badges-->
+<!--{link-badge}`https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html,Static Slides,link,badge-info badge-pill text-white`-->
+<p>In addition to this book page and the corresponding Jupyter Notebook,
+<em>static</em> and <em>interactive</em> <a class="reference external" href="https://github.com/hakimel/reveal.js/">reveal.js</a> slides are built from the page source.
+The static slides can be accessed with the <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html">Static Slides (Jupyter NB)</a> link
+listed in the left panel (the table of content) or with this button
+<a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html"><img alt="View Slides" src="https://img.shields.io/badge/view-slides-blue.svg" /></a>.
+To launch the interactive version of the slides (with executable code boxes),
+you need to open this page as a Jupyter Notebook in Binder – either via
+the <span class="fa fa-rocket"></span> <em>Launch Menu</em> or using this button
+<a class="reference external" href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-jnb.ipynb"><img alt="Open in Binder" src="https://mybinder.org/badge_logo.svg" /></a>;
+then open <a class="reference external" href="https://rise.readthedocs.io/en/stable/">RISE</a> by clicking the <span class="fa fa-chart-bar"></span> button located in the top bar
+of the Jupyter Notebook interface.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This page includes a number of Python cells holding code needed to set up
+ProbLog ipywidgets.
+You can reveal their content by clicking the <span class="fa fa-plus-circle"></span> buttons, which
+appear towards the right edge of this page.</p>
+</div>
+<div class="cell tag_hide-input tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">problog.program</span> <span class="kn">import</span> <span class="n">PrologString</span>
+<span class="kn">from</span> <span class="nn">problog</span> <span class="kn">import</span> <span class="n">get_evaluatable</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_outcome</span><span class="p">(</span><span class="n">pl_dict</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pl_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">pl_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">height</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.15</span><span class="p">])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="o">-.</span><span class="mi">5</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="o">.</span><span class="mi">5</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">v</span> <span class="o">+</span> <span class="o">.</span><span class="mi">02</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">v</span><span class="p">),</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">evaluate_problog</span><span class="p">(</span><span class="n">programme</span><span class="p">):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">PrologString</span><span class="p">(</span><span class="n">programme</span><span class="p">)</span>
+    <span class="n">d</span> <span class="o">=</span> <span class="n">get_evaluatable</span><span class="p">()</span><span class="o">.</span><span class="n">create_from</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">()</span>
+    <span class="n">plot_outcome</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We illustrate the use of Bayesian networks in ProbLog using the famous <a class="reference external" href="http://www.bnlearn.com/bnrepository/#earthquake">Earthquake</a> example.</p>
+<p>Suppose there is a burglary in our house with probability 0.7 and an earthquake with probability 0.2. Whether our alarm will ring depends on both burglary and earthquake:</p>
+<ul class="simple">
+<li><p>if there is a burglary and an earthquake, the alarm rings with probability 0.9;</p></li>
+<li><p>if there is only a burglary, it rings with probability 0.8;</p></li>
+<li><p>if there is only an earthquake, it rings with probability 0.1;</p></li>
+<li><p>if there is neither a burglary nor an earthquake, the alarm doesn’t ring.</p></li>
+</ul>
+<p>To model this as a Bayesian network, one would use three random variables, <em>burglary</em>, <em>earthquake</em> and <em>alarm</em>, with <em>burglary</em> and <em>earthquake</em> being parents of <em>alarm</em>. To model this in ProbLog, there are two possible solutions: using ‘plain’ ProbLog or using some synthactic sugar called probabilistic clauses and annotated disjunctions. We now explain both solutions.</p>
+<p>digraph alarm1 { burglary -&gt; alarm; earthquake -&gt; alarm; }<br />
+<a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#problog">ProbLog syntax documentation</a></p>
+<div class="section" id="probabilistic-facts">
+<h2>Probabilistic facts<a class="headerlink" href="#probabilistic-facts" title="Permalink to this headline">¶</a></h2>
+<p>In ‘plain’ ProbLog, we can encode the Bayesian network as follows.</p>
+<ul class="simple">
+<li><p>Since <em>burglary</em> and <em>earthquake</em> are random variable without parents, we can simply encode them as probabilistic facts, with the proper probability.</p></li>
+<li><p>To express the dependence of the random variable <em>alarm</em> on its parents <em>burglary</em> and <em>earthquake</em>, we use one Prolog rule for every possible state of the parents.</p>
+<ul>
+<li><p>The first rule covers the case in which <em>burglary</em> and <em>earthquake</em> are both true. The required rule is <code class="docutils literal notranslate"><span class="pre">alarm</span> <span class="pre">:-</span> <span class="pre">burglary,</span> <span class="pre">earthquake,</span> <span class="pre">p_alarm1</span></code>, with <code class="docutils literal notranslate"><span class="pre">p_alarm1</span></code> an auxiliary atom defined by means of the probabilistic fact <code class="docutils literal notranslate"><span class="pre">0.9::p_alarm1</span></code>. The point of adding this atom is to ensure that the probability of <em>alarm</em> in this case will be 0.9 as required.</p></li>
+<li><p>The second rule covers the case that <em>burglary</em> is true but <em>earthquake</em> is false. Note that <em>earthquake</em> being false is encoded using the “+” symbol for negation (as in regular Prolog).</p></li>
+<li><p>The third rule covers the case that <em>burglary</em> is false and <em>earthquake</em> is true.</p></li>
+<li><p>The fourth case (<em>burglary</em> and <em>earthquake</em> are both false) does not require a rule. This is because, according to our Bayesian network, the probability of <em>alarm</em> is 0 in this case.</p></li>
+</ul>
+</li>
+</ul>
+<p>We obtain the following ProbLog program.</p>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">probabilistic_facts</span> <span class="o">=</span> <span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;0.7::burglary.</span>
+<span class="sd">0.2::earthquake.</span>
+<span class="sd">0.9::p_alarm1.</span>
+<span class="sd">0.8::p_alarm2.</span>
+<span class="sd">0.1::p_alarm3.</span>
+
+<span class="sd">alarm :- burglary, earthquake, p_alarm1.</span>
+<span class="sd">alarm :- burglary, \+earthquake, p_alarm2.</span>
+<span class="sd">alarm :- \+burglary, earthquake, p_alarm3.</span>
+
+<span class="sd">evidence(alarm,true).</span>
+
+<span class="sd">query(burglary).</span>
+<span class="sd">query(earthquake).&quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">evaluate_problog</span><span class="p">(</span><span class="n">probabilistic_facts</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/bayesian_networks-jnb_17_0.png" src="../../_images/bayesian_networks-jnb_17_0.png" />
+</div>
+</div>
+<p>When pressing ‘Evaluate’, ProbLog2 calculates the probability of there being a <em>burglary</em> or an <em>earthquake</em>, given the evidence that the <em>alarm</em> rang. The resulting marginals are: <span class="math notranslate nohighlight">\(P(burglary)=0.9896\)</span> and <span class="math notranslate nohighlight">\(P(earthquake)=0.2275\)</span>.</p>
+</div>
+<div class="section" id="probabilistic-clauses">
+<h2>Probabilistic clauses<a class="headerlink" href="#probabilistic-clauses" title="Permalink to this headline">¶</a></h2>
+<p>While the above is a correct encoding of the given Bayesian network, it is perhaps not very intuitive due to the auxiliary atoms. Fortunately, ProbLog2 offers some syntactic sugar called <strong>probabilistic clauses</strong> to encode this in a more readable way. Above, we encoded the information that the conditional probability of an <em>alarm</em> given a <em>burglary</em> and an <em>earthquake</em> equals 0.9 using the rule <code class="docutils literal notranslate"><span class="pre">alarm</span> <span class="pre">:-</span> <span class="pre">burglary,</span> <span class="pre">earthquake,</span> <span class="pre">p_alarm1</span></code>, plus the probabilistic fact <code class="docutils literal notranslate"><span class="pre">0.9::p_alarm1</span></code>. We can replace both with a single probabilistic clause of the form <code class="docutils literal notranslate"><span class="pre">0.9::alarm</span> <span class="pre">:-</span> <span class="pre">burglary,</span> <span class="pre">earthquake</span></code>. This should be read as: if <em>burglary</em> and <em>earthquake</em> are true, this causes <em>alarm</em> to become true with probability 0.9 if there is a <em>burglary</em> and an <em>earthquake</em>. As this example illustrates, a probabilistic clause has a body, just like regular ProbLog rules, and a head. The difference is that now, the head is annotated with a probability. By also using probabilistic clauses for the other rules in the ProbLog encoding of the Bayesian network, we get the following program.</p>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">probabilistic_clauses</span> <span class="o">=</span> <span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;0.7::burglary.</span>
+<span class="sd">0.2::earthquake.</span>
+
+<span class="sd">0.9::alarm :- burglary, earthquake.</span>
+<span class="sd">0.8::alarm :- burglary, \+earthquake.</span>
+<span class="sd">0.1::alarm :- \+burglary, earthquake.</span>
+
+<span class="sd">evidence(alarm,true).</span>
+<span class="sd">query(burglary).</span>
+<span class="sd">query(earthquake).&quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">evaluate_problog</span><span class="p">(</span><span class="n">probabilistic_clauses</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/bayesian_networks-jnb_22_0.png" src="../../_images/bayesian_networks-jnb_22_0.png" />
+</div>
+</div>
+<p>As you can verify by pressing ‘Evaluate’, this returns the same marginals as the ‘plain’ ProbLog encoding: <span class="math notranslate nohighlight">\(P(burglary)=0.9896\)</span> and <span class="math notranslate nohighlight">\(P(earthquake)=0.2275\)</span>. This is not a coincidence: the two programs are equivalent (but the program with probabilistic clauses has the advantage of not needing any auxiliary atoms).</p>
+<p><a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#probabilistic-clauses">Probabilistic clauses documentation</a></p>
+</div>
+<div class="section" id="first-order">
+<h2>First-order<a class="headerlink" href="#first-order" title="Permalink to this headline">¶</a></h2>
+<p>To illustrate the use of <em>first-order</em> ProbLog programs, we show below a first-order extension of the <em>Alarm</em> example.</p>
+<p>digraph alarm2 { burglary -&gt; alarm; earthquake -&gt; alarm; alarm -&gt; “calls(john)”; alarm -&gt; “calls(…)”; alarm -&gt; “calls(mary)”; }<br />
+Suppose there are <span class="math notranslate nohighlight">\(N\)</span> people and each person independently <em>calls</em> the police with a certain probability, depending on the <em>alarm</em> ringing or not: if the <em>alarm</em> rings, the probability of <em>calling</em> is 0.8, otherwise it is 0.1. This can be modelled as follows. We again use probabilistic clauses and show the case <span class="math notranslate nohighlight">\(N=2\)</span> (two people).</p>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">first_order</span> <span class="o">=</span> <span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;person(john).</span>
+<span class="sd">person(mary).</span>
+
+<span class="sd">0.7::burglary.</span>
+<span class="sd">0.2::earthquake.</span>
+
+<span class="sd">0.9::alarm :- burglary, earthquake.</span>
+<span class="sd">0.8::alarm :- burglary, \+earthquake.</span>
+<span class="sd">0.1::alarm :- \+burglary, earthquake.</span>
+
+<span class="sd">0.8::calls(X) :- alarm, person(X).</span>
+<span class="sd">0.1::calls(X) :- \+alarm, person(X).</span>
+
+<span class="sd">evidence(calls(john),true).</span>
+<span class="sd">evidence(calls(mary),true).</span>
+
+<span class="sd">query(burglary).</span>
+<span class="sd">query(earthquake).&quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">evaluate_problog</span><span class="p">(</span><span class="n">first_order</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/bayesian_networks-jnb_27_0.png" src="../../_images/bayesian_networks-jnb_27_0.png" />
+</div>
+</div>
+<p>When pressing ‘Evaluate’, ProbLog2 calculates the probability of there being a <em>burglary</em> or an <em>earthquake</em>, given the evidence that both <em>john</em> and <em>mary</em> <em>called</em>. We obtain <span class="math notranslate nohighlight">\(P(burglary)=0.981939\)</span> and <span class="math notranslate nohighlight">\(P(earthquake)=0.226851\)</span>.</p>
+<p>In general, any Boolean Bayesian network can be modeled in ProbLog using the above methodology. This can also be extended to non-Boolean Bayesian networks (in which some variables can take more than two possible values), by using annotated disjunctions with multiple atoms in the head.</p>
+</div>
+<div class="section" id="annotated-disjunctions-dealing-with-multi-valued-variables">
+<h2>Annotated disjunctions: Dealing with multi-valued variables<a class="headerlink" href="#annotated-disjunctions-dealing-with-multi-valued-variables" title="Permalink to this headline">¶</a></h2>
+<p>Since the random variables in the Bayesian network are all Boolean, we only need a single literal in the head of the rules. We can extend the Bayesian network to have a multi-valued variable by indicating the severity of the <em>earthquake</em>. The literal <code class="docutils literal notranslate"><span class="pre">earthquake</span></code> now has three possible values <code class="docutils literal notranslate"><span class="pre">none</span></code>, <code class="docutils literal notranslate"><span class="pre">mild</span></code>, <code class="docutils literal notranslate"><span class="pre">heavy</span></code> instead of previously two (no or yes). The probabilities of each value is denoted by the <strong>annotated disjunction</strong> in <code class="docutils literal notranslate"><span class="pre">0.01::earthquake(heavy);</span> <span class="pre">0.19::earthquake(mild);</span> <span class="pre">0.8::earthquake(none)</span></code>. An annotated disjunction is similar to a probabilistic disjunction, but with a different head. Instead of it being one atom annotated with a probability, it is now a disjunction of atoms each annotated with a probability.</p>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">annotated_disjunctions</span> <span class="o">=</span> <span class="p">(</span>
+<span class="sd">&quot;&quot;&quot;person(john).</span>
+<span class="sd">person(mary).</span>
+
+<span class="sd">0.7::burglary.</span>
+<span class="sd">0.01::earthquake(heavy); 0.19::earthquake(mild); 0.8::earthquake(none).</span>
+
+<span class="sd">0.90::alarm :-   burglary, earthquake(heavy).</span>
+<span class="sd">0.85::alarm :-   burglary, earthquake(mild).</span>
+<span class="sd">0.80::alarm :-   burglary, earthquake(none).</span>
+<span class="sd">0.10::alarm :- \+burglary, earthquake(mild).</span>
+<span class="sd">0.30::alarm :- \+burglary, earthquake(heavy).</span>
+
+<span class="sd">0.8::calls(X) :- alarm, person(X).</span>
+<span class="sd">0.1::calls(X) :- \+alarm, person(X).</span>
+
+<span class="sd">evidence(calls(john),true).</span>
+<span class="sd">evidence(calls(mary),true).</span>
+
+<span class="sd">query(burglary).</span>
+<span class="sd">query(earthquake(_)).&quot;&quot;&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">evaluate_problog</span><span class="p">(</span><span class="n">annotated_disjunctions</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/bayesian_networks-jnb_33_0.png" src="../../_images/bayesian_networks-jnb_33_0.png" />
+</div>
+</div>
+<p><a class="reference external" href="https://problog.readthedocs.io/en/latest/modeling_basic.html#annotated-disjunctions">Annotated disjunctions documentation</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "so-cool/you-only-write-thrice",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./src/text"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="bayesian_networks-mnb.html" title="previous page">Bayesian Networks (Markdown NB)</a>
+    <a class='right-next' id="next-link" href="bayesian_networks-pnb.html" title="next page">Bayesian Networks (Percent NB)</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a>, University of Bristol, United Kingdom
+<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            This book is a template for building interactive ProbLog books with <a href="https://jupyterbook.org/intro.html">Jupyter Book</a>. The source of this book is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', '268736012', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
