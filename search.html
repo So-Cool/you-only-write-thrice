@@ -5,9 +5,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Interactive ProbLog&lt;br&gt;Book Example</title>
+    <title>Search &#8212; You Only Write Thrice</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,23 +20,19 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/problog-book-template.css" />
+    <link rel="stylesheet" type="text/css" href="_static/yowt.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
     
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -46,7 +43,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -59,29 +56,20 @@
     <script src="_static/searchtools.js"></script>
     <script src="_static/language_data.js"></script>
     <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/search.html" />
-    <link rel="shortcut icon" href="_static/wikidata.svg"/>
+    <link rel="shortcut icon" href="_static/yowt_logo.svg"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="#" />
   <script src="searchindex.js" defer></script>
   
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://so-cool.github.io/you-only-write-thrice/search.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Interactive ProbLog&lt;br&gt;Book Example" />
-<meta property="og:description" content="" />
-<meta property="og:image"       content="https://so-cool.github.io/you-only-write-thrice/_static/wikidata.svg" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    
 
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -90,92 +78,71 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/wikidata.svg" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Interactive ProbLog<br>Book Example</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/yowt_logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">You Only Write Thrice</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="#" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="src/problog_book_template.html">
-   Interactive ProbLog Book Example
+  <a class="reference internal" href="src/yowt.html">
+   You Only Write Thrice
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  Bayesian Networks
- </span>
-</p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="src/text/bayesian_networks-mnb.html">
-   Bayesian Networks (Markdown NB)
+  <a class="reference internal" href="src/text/source_multiplicity.html">
+   1. Source Multiplicity
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html">
-   Static Slides (Markdown NB)
-   <i class="fas fa-external-link-alt">
-   </i>
+  <a class="reference internal" href="src/text/publishing_workflow.html">
+   2. Publishing Workflow
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="src/text/bayesian_networks-jnb.html">
-   Bayesian Networks (Jupyter NB)
+  <a class="reference internal" href="src/text/conclusions.html">
+   3. Conclusions
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html">
-   Static Slides (Jupyter NB)
-   <i class="fas fa-external-link-alt">
-   </i>
+  <a class="reference internal" href="src/text/references.html">
+   4. References
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="src/text/bayesian_networks-pnb.html">
-   Bayesian Networks (Percent NB)
+  <a class="reference internal" href="src/text/appendix.html">
+   5. Appendix
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-pnb.slides.html">
-   Static Slides (Percent NB)
-   <i class="fas fa-external-link-alt">
-   </i>
-  </a>
- </li>
-</ul>
-<p class="caption collapsible-parent">
- <span class="caption-text">
-  See Also
- </span>
-</p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference external" href="https://simply-logical.space/">
-   Simply Logical Organisation
-   <i class="fas fa-external-link-alt">
-   </i>
+  <a class="reference internal" href="src/slides/yowt_slides.html">
+   6. Slides
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">
-   GitHub Template
-   <i class="fas fa-external-link-alt">
-   </i>
+   Source (GitHub)
   </a>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
+
+</div>
 
 </div>
 
@@ -219,12 +186,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -277,12 +244,12 @@
     <div class="container">
       <p>
         
-          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a>, University of Bristol, United Kingdom
+          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
 <br/>
         
             &copy; Copyright 2021.<br/>
           <div class="extra_footer">
-            This book is a template for building interactive ProbLog books with <a href="https://jupyterbook.org/intro.html">Jupyter Book</a>. The source of this book is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+            This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
 
           </div>
       </p>
@@ -293,21 +260,16 @@
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+  
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DF8Y2BNFE0"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('config', 'G-DF8Y2BNFE0');
+                </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '268736012', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>

@@ -1,0 +1,12 @@
+h1, h2, h3, h4 {
+  font-family: "News Cycle", Impact, sans-serif !important;
+  text-transform: none !important;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}

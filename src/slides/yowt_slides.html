@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6. Slides &#8212; You Only Write Thrice</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/yowt.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.html" />
+    <link rel="shortcut icon" href="../../_static/yowt_logo.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="5. Appendix" href="../text/appendix.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/yowt_logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">You Only Write Thrice</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../yowt.html">
+   You Only Write Thrice
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../text/source_multiplicity.html">
+   1. Source Multiplicity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../text/publishing_workflow.html">
+   2. Publishing Workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../text/conclusions.html">
+   3. Conclusions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../text/references.html">
+   4. References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../text/appendix.html">
+   5. Appendix
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   6. Slides
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">
+   Source (GitHub)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../../_sources/src/slides/yowt_slides.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/src/slides/yowt_slides.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/so-cool/you-only-write-thrice"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/slides/yowt_slides.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/slides/yowt_slides.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="slides">
+<span id="sec-slides"></span><h1><span class="section-number">6. </span>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">¶</a></h1>
+<div class="attention admonition">
+<p class="admonition-title">Content format</p>
+<p>This page is written in the <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html"><em>Markdown Notebook</em></a> format.
+While it is intended to be rendered through <a class="reference external" href="https://rise.readthedocs.io/en/stable/">RISE</a> as <a class="reference external" href="https://github.com/hakimel/reveal.js/">reveal.js</a> slides,
+it can also be viewed as a Jupyter Book section or a Jupyter Notebook.
+The code blocks embedded in this page can be executed through Jupyter Notebook
+via <a class="reference external" href="https://mybinder.org/">MyBinder</a> – this option is available from the <em>Launch Menu</em> that appears
+after hovering the mouse cursor over the <span class="fa fa-rocket"></span> icon shown in the top
+bar.
+Alternatively, the code boxes can be executed directly on this page with
+<a class="reference external" href="https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab">Thebe</a> by activating <span class="fa fa-play"></span> <em>Live Code</em> from the
+<span class="fa fa-rocket"></span> <em>Launch Menu</em>.</p>
+<p>In addition to this article page and the corresponding Jupyter Notebook,
+<em>static</em> and <em>interactive</em> <a class="reference external" href="https://github.com/hakimel/reveal.js/">reveal.js</a> slides are built from the page source.
+The static slides can be accessed with this button
+<a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html"><img alt="View Slides" src="https://img.shields.io/badge/view-slides-blue.svg" /></a>.
+To launch the interactive version of the slides (with executable code boxes),
+first open this page as a Jupyter Notebook through Binder – either via
+the <span class="fa fa-rocket"></span> <em>Launch Menu</em> or using this button
+<a class="reference external" href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"><img alt="Open in Binder" src="https://mybinder.org/badge_logo.svg" /></a>;
+next execute all of the code cells (using the <em>Kernel → Restart &amp; Run All</em>
+Jupyter Notebook menu);
+then open <a class="reference external" href="https://rise.readthedocs.io/en/stable/">RISE</a> by clicking the <span class="fa fa-chart-bar"></span> button located in the top bar
+of the Jupyter Notebook interface.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This page includes a number of Python cells holding setup code.
+You can reveal the content of these cells by clicking the <span class="fa fa-plus-circle"></span>
+buttons, which appear towards the right edge of this page.</p>
+</div>
+<h1 style="text-align: center">You Only Write Thrice</h1>
+<h2 style="text-align: center">Creating Documents, Computational Notebooks and Presentations From a Single Source</h2>
+<br><br><br>
+<img width="25%" style="vertical-align:bottom; float:left;" src="../img/slides/uob.svg">
+<p style="vertical-align:bottom; float:right; font-size: 120%;"><b>Kacper Sokol</b><br/>and Peter Flach</p><div style="margin-bottom: 3cm;"></div><div class="cell tag_hide-input tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> widget
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">IFrame</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DISTILL</span> <span class="o">=</span> <span class="s1">&#39;https://distill.pub/2019/activation-atlas/&#39;</span>
+<span class="n">OPEN_REVIEW</span> <span class="o">=</span> <span class="s1">&#39;https://openreview.net/forum?id=i4zpuNRiU4G&#39;</span>
+<span class="n">YOU_ONLY_WRITE_THRICE</span> <span class="o">=</span> <span class="s1">&#39;https://so-cool.github.io/you-only-write-thrice/&#39;</span>
+<span class="n">SIMPLY_LOGICAL</span> <span class="o">=</span> <span class="s1">&#39;https://too.simply-logical.space/src/text/2_part_ii/4.2.html&#39;</span>
+
+<span class="k">def</span> <span class="nf">preview_url</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">IFrame</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="n">height</span><span class="p">)</span>  <span class="c1"># 1200</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-input tag_thebe-init docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">interactive_plot</span><span class="p">():</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">patch</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">my_sine</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">phi</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns a sine for x with angular frequeny w and amplitude amp.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">amp</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">w</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="n">phi</span><span class="p">))</span>
+
+    <span class="nd">@widgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">w</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+                      <span class="n">amp</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">.1</span><span class="p">),</span>
+                      <span class="n">phi</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">+</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">))</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="n">w</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">amp</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">phi</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Removes old lines from plot and plots new one.&quot;&quot;&quot;</span>
+        <span class="p">[</span><span class="n">l</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">lines</span><span class="p">]</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">my_sine</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">phi</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<h2 style="text-align: center">Publishing Process</h2><h3>Stagnation</h3>
+<div style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+<div style="float: left; width: 45%;">
+    <img src="../img/slides/Origin_of_Species.jpg" style="width:100% margin-left: auto; margin-right: auto;">
+</div>
+<div style="float: right; width: 45%;">
+    <img src="../img/slides/kernels.jpg" style="width:100% margin-left: auto; margin-right: auto;">
+</div>
+</div><div style="margin-bottom: 17cm;"></div><h3>Ideas: distill.pub</h3><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">preview_url</span><span class="p">(</span><span class="n">DISTILL</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="800"
+    height="500"
+    src="https://distill.pub/2019/activation-atlas/"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<h3>Ideas: OpenReview</h3>
+<img width="90%" align="middle" src="../img/slides/OPENREVIEW.png" alt="surrogate" style="display: block; margin-left: auto; margin-right: auto;"><h3>Ideas: The Open Journals (The Journal of Open Source Software)</h3>
+<img width="90%" align="middle" src="../img/slides/JOSS_REVIEW.png" alt="surrogate" style="display: block; margin-left: auto; margin-right: auto;"><h3>Issues</h3>
+<ul class="simple">
+<li><p>Standalone tools</p>
+<ul>
+<li><p>Not integrated</p></li>
+<li><p>Lack of a dedicated process</p></li>
+</ul>
+</li>
+<li><p>Not covering the entire publishing process</p>
+<ul>
+<li><p>Compose (write / revise)</p></li>
+<li><p>Review (comment / rebut)</p></li>
+<li><p>Publish (format / version)</p></li>
+</ul>
+</li>
+</ul>
+<h2 style="text-align: center">Format Multiplicity</h2><h3>(Conference) Publishing</h3>
+<br>
+<div class="row">
+<div class="column">
+<ul class="simple">
+<li><p>Manuscripts</p></li>
+<li><p>Presentations</p></li>
+<li><p>Posters</p></li>
+<li><p>Promotional videos</p></li>
+<li><p>Press releases</p></li>
+<li><p>Blog posts</p></li>
+<li><p>Source code</p></li>
+<li><p>Computational examples</p></li>
+<li><p>…</p></li>
+</ul>
+</div>
+<div class="column fragment">
+<ul class="simple">
+<li><p>Reviews</p></li>
+<li><p>Revisions</p></li>
+<li><p>Versions</p></li>
+</ul>
+</div>
+</div><h3>Source Formats</h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\LaTeX\)</span> documents and Beamer slides</p></li>
+<li><p>Microsoft Word / OpenOffice Writer / Google Docs</p></li>
+<li><p>Microsoft PowerPoint / OpenOffice Impress / Google Slides</p></li>
+<li><p>Markdown / HTML (and other web technologies such as JavaScript)</p></li>
+<li><p>Code hosted on Dropbox / GitHub / BitBucket</p></li>
+<li><p>Jupyter Notebooks / CodaLab documents</p></li>
+</ul>
+<hr class="docutils" />
+<center>
+    <b>Multiple (out-of-sync) copies of the same content in different formats</b>
+</center><h3>Lowest Common Denominator: Static Outputs and Artefacts</h3>
+<p>Artefacts <em>reusability</em>:</p>
+<ul class="simple">
+<li><p>visualisations / figures</p></li>
+<li><p>tables</p></li>
+<li><p>code snippets</p></li>
+<li><p>mathematical typesetting</p></li>
+</ul>
+<p>enforces their simplest – often static – type</p>
+<h2 style="text-align: center">Towards Online and Interactive Research Outputs</h2><h3>Authoring</h3>
+<div class="row">
+<div class="column">
+<h4>Multiple Entry Points – Single Source</h4>
+<p>MyST Markdown →</p>
+<ul class="simple">
+<li><p><strong>Jupyter Notebook</strong> – computational narrative</p>
+<ul>
+<li><p>Google Colab</p></li>
+<li><p>MyBinder</p></li>
+</ul>
+</li>
+<li><p><strong>Reveal.JS</strong> – interactive slides</p></li>
+<li><p><strong>Jupyter Book</strong> – interactive report/document/book</p></li>
+</ul>
+</div>
+<div class="column fragment">
+<h4>Version-controlled Environment</h4>
+<ul class="simple">
+<li><p>Source versioning and history tracking</p></li>
+<li><p>E.g., <code class="docutils literal notranslate"><span class="pre">git</span></code> or <code class="docutils literal notranslate"><span class="pre">mercurial</span></code></p></li>
+</ul>
+</div>
+</div><h3>Reviewing</h3>
+<div class="row">
+<div class="column">
+<ul class="simple">
+<li><p><strong>Akin to source code review</strong>, e.g., through <em>Issues</em> and <em>Pull Requests</em>
+infrastructure</p></li>
+<li><p><strong>Permanently attached</strong> to the document source</p>
+<ul>
+<li><p>Provenance record</p></li>
+<li><p>Resubmission history</p></li>
+</ul>
+</li>
+<li><p><strong>Conversational</strong> review with inline comments and discussions</p></li>
+</ul>
+</div>
+<div class="column">
+<img width="90%" align="middle" src="../img/slides/review.png" alt="surrogate" style="display: block; margin-left: auto; margin-right: auto;">
+</div>
+</div><h3>Publishing</h3>
+<ul class="simple">
+<li><p>Tag a version</p></li>
+<li><p>Release to an archiving platform</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>Bibliometrics</strong></p>
+<ul class="simple">
+<li><p>DOI minting (e.g., Zenodo) to support citations</p></li>
+<li><p>Google Analytics-like dissemination tracking</p></li>
+</ul>
+<h3>Presenting</h3>
+<ul class="simple">
+<li><p><strong>Three formats</strong>: documents, slides and computational notebooks</p></li>
+<li><p>Native <em>interactivity</em> support</p></li>
+<li><p>Improved accessibility</p>
+<ul>
+<li><p>Execute directly <strong>in the browser</strong> – no need to install stuff</p></li>
+<li><p>Support for web-enabled <strong>assistive technologies</strong></p></li>
+</ul>
+</li>
+<li><p>Web technologies are the limit</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interactive_plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "c477d5162f244cc7a9faa500f6aff1b5", "version_major": 2, "version_minor": 0}
+</script><script type="application/vnd.jupyter.widget-view+json">
+{"model_id": "cadcf32d23f547d8bf55f197db8d475a", "version_major": 2, "version_minor": 0}
+</script></div>
+</div>
+<h3>The Way Forward</h3>
+<ul class="simple">
+<li><p>Extend the Jupyter Book / Sphinx <strong>plugin ecosystem</strong></p>
+<ul>
+<li><p>Support non-mainstream programming languages (SWI Prolog, ProbLog and cplint)</p></li>
+<li><p>Linked exercise and solution blocks</p></li>
+<li><p>Custom code syntax highlighting</p></li>
+</ul>
+</li>
+<li><p><strong>Bespoke publishing lifecycle platform</strong> (instead of GitHub or BitBucket)</p></li>
+<li><p><strong>Compute resources</strong> suitable for hosting and executing the (interactive) content</p></li>
+</ul>
+<hr class="docutils" />
+<img width="15%" style="vertical-align:bottom; float:left;" src="../img/slides/tailor.png">
+<p>Horizon 2020 ICT-48 European AI excellence centre exploring <strong>new ways of working</strong> and <strong>AI-powered research and collaboration tools</strong>.</p>
+<h2 style="text-align: center">Exhibit</h2><h3>Source</h3>
+<blockquote>
+<div><p><a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">https://github.com/so-cool/you-only-write-thrice/</a></p>
+</div></blockquote>
+<img width="90%" align="middle" src="../img/slides/source_code.png" alt="surrogate" style="display: block; margin-left: auto; margin-right: auto;"><h3>Preview</h3>
+<blockquote>
+<div><p><a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/">https://so-cool.github.io/you-only-write-thrice/</a></p>
+</div></blockquote>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">preview_url</span><span class="p">(</span><span class="n">YOU_ONLY_WRITE_THRICE</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="800"
+    height="500"
+    src="https://so-cool.github.io/you-only-write-thrice/"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<h2 style="text-align: center; vertical-align: center;">Thank You!</h2>
+<br><br><br>
+<p style="text-align: right; vertical-align:bottom; float:right; font-size: 100%;"><a href="K.Sokol@bristol.ac.uk">K.Sokol@bristol.ac.uk</a></p></div>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"258e2ef4a90c42bd89b8ef4385d67b75": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "26bbf3b97b7b41e3853673513a08f474": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3879108a017d4bd4941d33a8c05fcf58": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "w", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_ae01bf361ecd40119b034079ca8428aa", "max": 10, "min": 0, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_f280273165774a26997caedce2bdf963", "value": 1}}, "8a62a15336994490833d55f551a8d09e": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "8c8c2b68091841aabf75527ee96b32c5": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "phi", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_c512046c819d441db1b1ad8114d25810", "max": 6.293185307179586, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.01, "style": "IPY_MODEL_b142efd6e20b426eace691e4eed343fa", "value": 0.0}}, "a1a25f4d768f4cf781aa7118ec6d0c85": {"model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "model_name": "OutputModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_26bbf3b97b7b41e3853673513a08f474", "msg_id": "", "outputs": []}}, "ae01bf361ecd40119b034079ca8428aa": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b142efd6e20b426eace691e4eed343fa": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c33e1805df364338b159826564e1e562": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.9.0", "model_name": "ToolbarModel", "state": {"_current_action": "", "_dom_classes": [], "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.9.0", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.9.0", "_view_name": "ToolbarView", "button_style": "", "collapsed": true, "layout": "IPY_MODEL_8a62a15336994490833d55f551a8d09e", "orientation": "vertical", "toolitems": [["Home", "Reset original view", "home", "home"], ["Back", "Back to previous view", "arrow-left", "back"], ["Forward", "Forward to next view", "arrow-right", "forward"], ["Pan", "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect", "arrows", "pan"], ["Zoom", "Zoom to rectangle\nx/y fixes axis, CTRL fixes aspect", "square-o", "zoom"], ["Download", "Download plot", "floppy-o", "save_figure"]]}}, "c477d5162f244cc7a9faa500f6aff1b5": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.9.0", "model_name": "MPLCanvasModel", "state": {"_cursor": "pointer", "_dom_classes": [], "_figure_label": "Figure", "_height": 0, "_image_mode": "full", "_message": "", "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.9.0", "_model_name": "MPLCanvasModel", "_rubberband_height": 0, "_rubberband_width": 0, "_rubberband_x": 0, "_rubberband_y": 0, "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.9.0", "_view_name": "MPLCanvasView", "_width": 0, "capture_scroll": false, "footer_visible": true, "header_visible": true, "layout": "IPY_MODEL_f72b644d9a9d442f978d0df1957a290f", "resizable": true, "toolbar": "IPY_MODEL_c33e1805df364338b159826564e1e562", "toolbar_position": "left", "toolbar_visible": true}}, "c512046c819d441db1b1ad8114d25810": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c60e8f9e1dc648ceb9ac4040b0fa247f": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "cadcf32d23f547d8bf55f197db8d475a": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "VBoxModel", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_3879108a017d4bd4941d33a8c05fcf58", "IPY_MODEL_ef68f4abfa2a41de93d66ff49fa021c7", "IPY_MODEL_8c8c2b68091841aabf75527ee96b32c5", "IPY_MODEL_a1a25f4d768f4cf781aa7118ec6d0c85"], "layout": "IPY_MODEL_c60e8f9e1dc648ceb9ac4040b0fa247f"}}, "ee497b8b63a34586a85189064ed31065": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "ef68f4abfa2a41de93d66ff49fa021c7": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "amp", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_258e2ef4a90c42bd89b8ef4385d67b75", "max": 4.0, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_ee497b8b63a34586a85189064ed31065", "value": 1.0}}, "f280273165774a26997caedce2bdf963": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "f72b644d9a9d442f978d0df1957a290f": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "so-cool/you-only-write-thrice",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./src/slides"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../text/appendix.html" title="previous page"><span class="section-number">5. </span>Appendix</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
+<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DF8Y2BNFE0"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('config', 'G-DF8Y2BNFE0');
+                </script>
+
+  </body>
+</html>

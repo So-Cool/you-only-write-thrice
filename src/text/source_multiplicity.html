@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Source Multiplicity &#8212; You Only Write Thrice</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/yowt.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/src/text/source_multiplicity.html" />
+    <link rel="shortcut icon" href="../../_static/yowt_logo.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2. Publishing Workflow" href="publishing_workflow.html" />
+    <link rel="prev" title="You Only Write Thrice" href="../yowt.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      <img src="../../_static/yowt_logo.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">You Only Write Thrice</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../yowt.html">
+   You Only Write Thrice
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1. Source Multiplicity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="publishing_workflow.html">
+   2. Publishing Workflow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="conclusions.html">
+   3. Conclusions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="references.html">
+   4. References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="appendix.html">
+   5. Appendix
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../slides/yowt_slides.html">
+   6. Slides
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">
+   Source (GitHub)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/src/text/source_multiplicity.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/so-cool/you-only-write-thrice"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/text/source_multiplicity.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/text/source_multiplicity.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="source-multiplicity">
+<h1><span class="section-number">1. </span>Source Multiplicity<a class="headerlink" href="#source-multiplicity" title="Permalink to this headline">¶</a></h1>
+<p>Despite immense technological advances permeating into our everyday life
+and work, scientific publishing has seen much less evolution. While
+moving on from hand- or type-written manuscripts to electronic documents
+allowed for faster and more convenient editing, dissemination and
+review, the (now obsolete and unnatural) limitations of the “movable
+type” publication format persist. Among others, this glass wall poses
+significant challenges to effective communication of scientific findings
+with their ever-increasing volume, velocity and complexity. To overcome
+these difficulties we may need to depart from the, de facto standard,
+<em>Portable Document Format</em> (PDF) and set our sight on something more
+flexible and universal. In the past three decades the World Wide Web has
+organically evolved from a collection of hyper-linked text documents
+into a treasure trove of diverse and interactive resources – a process
+that should inspire an evolution of the scientific publishing workflow.</p>
+<p>A physical, printed and bound, copy of a research paper may have been
+mostly replaced by a PDF document viewable on a wide array of electronic
+devices, but both formats effectively share the same limitations. These
+constraints have recently become even more prominent with research
+venues requiring to publish supplementary materials that fall outside of
+the textual spectrum. Releasing <em>source code</em> is advised to ensure
+reproducibility; <em>computational notebooks</em> highlight individual methods,
+experiments and results; recording a short <em>promotional video</em> helps to
+advertise one’s research; <em>slides</em> and <em>oral presentations</em> (often
+pre-recorded nowadays) disseminate findings and foster discussions; and
+<em>posters</em> graphically summarise research contributions. Notably, these
+artefacts are usually created independently and are distributed
+separately from the underlying paper – nonetheless while disparate in
+appearance, form and function, they all share a common origin.</p>
+<div class="figure align-default" id="fig-uowt">
+<a class="reference internal image-reference" href="../../_images/yowt_fig.svg"><img alt="../../_images/yowt_fig.svg" src="../../_images/yowt_fig.svg" width="50%" /></a>
+<p class="caption"><span class="caption-number">Figure 1 </span><span class="caption-text">Generating multiple conference artefacts such as documents (papers),
+presentations (slides) and computational notebooks from a single source
+repository can streamline the academic publishing workflow.</span><a class="headerlink" href="#fig-uowt" title="Permalink to this image">¶</a></p>
+</div>
+<p>Without a designated place for each research output and a dedicated
+workflow to create and distribute them, they may end up scattered
+through the Internet. Code may be published on GitHub, computational
+notebooks distributed via Google Colab or MyBinder, and videos posted on
+YouTube. Slides and posters, on the other hand, tend to accompany the
+paper – which itself is placed in proceedings – sparingly with an
+often outdated version of the article available through arXiv. While
+organising, distributing and linking all of these resources is a goal in
+itself, we shall first reconsider the authoring process responsible for
+their creation. Since delivering each format appears to be an
+independent task that requires a dedicated effort, having as many of
+these resources as possible generated from a single source could
+streamline the process and create a coherent narrative hosted in a
+single place. While as a community we created technology powerful enough
+to train vision models in a web browser<a class="footnote-reference brackets" href="#id12" id="id1">1</a>, we find it somewhat
+difficult to see beyond the restrictive PDF format and hence
+increasingly lack publishing tools necessary to carry out our work
+effectively.</p>
+<p>To streamline the process of creating academic content we propose to
+generate conference artefacts – such as documents (papers),
+presentations (slides) and computational notebooks – from a single
+source as depicted in <a class="reference internal" href="#fig-uowt"><span class="std std-numref">Figure 1</span></a>.
+By storing all the information in a
+version-controlled environment (e.g., <code class="docutils literal notranslate"><span class="pre">git</span></code>) we can also track article
+evolution and revision, and facilitate a review process similar to the
+one deployed in software engineering and closely resembling the
+OpenReview workflow. Combining together research outputs as well as
+their reviews and revisions could improve credibility and provenance of
+scientific finding, thus simplifying re-submission procedures and taking
+the pressure off overworked reviewers. Additionally, including
+<em>interactive</em> materials – such as code boxes and computational
+notebooks – in the published resources encourages releasing <em>working</em>
+and accessible code.</p>
+<p>The envisaged workflow generalises beyond academic publishing and may
+well be adopted for teaching, for example, producing lecture notes,
+slides and (computational) exercise sheets. Our proof of concept
+consists of:</p>
+<ul class="simple">
+<li><p>documents based on <em>Jupyter Book</em> <span id="id2">[<a class="reference internal" href="references.html#id5">Executable Books Community, 2020</a>]</span>;</p></li>
+<li><p>computational narratives presented as <em>Jupyter
+Notebooks</em> <span id="id3">[<a class="reference internal" href="references.html#id6">Kluyver <em>et al.</em>, 2016</a>]</span>; and</p></li>
+<li><p>presentations (decks of slides) created with
+<em>reveal.js</em> <span id="id4">[<a class="reference internal" href="references.html#id2">El Hattab, 2020</a>]</span>.</p></li>
+</ul>
+<p>A self-contained example of generating these three artefacts from a
+single source document is published with GitHub Pages and accessible at
+<a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/">https://so-cool.github.io/you-only-write-thrice/</a>.
+The text is written in extended markdown syntax (MyST flavour), and the
+code is executed in Python, however any programming language supported
+by the Jupyter ecosystem can be used. These sources are hosted on GitHub
+and can be inspected at
+<a class="reference external" href="https://github.com/so-cool/you-only-write-thrice/">https://github.com/so-cool/you-only-write-thrice/</a>.
+Publishing these diverse materials as interactive web resources
+democratises access to cutting-edge research since they can be explored
+directly in the browser without installing any software dependencies.
+While the main output of the proposed workflow is a collection of HTML
+pages, it can also produce static formats such as PDF or EPUB, albeit
+forfeiting all of the discussed advantages.</p>
+<p>As it stands, our workflow consists of open-source tools, but it relies
+on free tiers of commercial services. To ensure longevity and
+sustainability, we need community-driven software and infrastructure for
+hosting, reviewing and publishing resources in the proposed formats, for
+example, taking inspiration from the OpenReview model. Being able to
+influence its development, we could prioritise features needed for a
+wider adoption of this bespoke platform, e.g., by implementing anonymous
+submission and review protocols, which are not available in commercial
+solutions such as GitHub or Bitbucket. At the content-generation end,
+our workflow relies heavily on the Jupyter ecosystem. Jupyter Book and
+MyST Markdown provide basic text formatting and implement academic
+publishing features such as mathematical typesetting (with LaTeX syntax)
+and bibliography management (with [Bib]{.smallcaps}TeX). The platform is
+still in early development and exhibits certain limitations, e.g.,
+fine-grained layout customisation may be difficult, which is
+particularly noticeable with reveal.js slides. However, the Jupyter Book
+environment can be extended with custom plugins, which in the long term
+may be as plentiful as LaTeX packages; for example, we built support for
+non-mainstream programming languages such as SWI Prolog<a class="footnote-reference brackets" href="#id13" id="id5">2</a>, cplint<a class="footnote-reference brackets" href="#id14" id="id6">3</a>
+and ProbLog<a class="footnote-reference brackets" href="#id15" id="id7">4</a> that are not natively supported by Jupyter. While the
+openness and transparency of the proposed workflow can be considered its
+forte, the same qualities may also pose challenges for academic
+publishing, which need to be explored further before pursuing this
+avenue.</p>
+<p>A part of our workflow derives from the <em>computational narrative</em>
+concept, which interweaves prose with executable code, thus improving
+reproducibility and accessibility of scientific findings. The most
+prominent example of this technology are Jupyter Notebooks delivered to
+the audience through MyBinder or Google Colab. Content that is more
+narrative-driven, on the other hand, can be published with
+Bookdown <span id="id8">[<a class="reference internal" href="references.html#id4">R Studio, 2020</a>]</span> – a toolkit comparable to Jupyter Book but
+stemming from the R language ecosystem. A similar publication platform,
+dedicated to research papers, is Distill<a class="footnote-reference brackets" href="#id16" id="id9">5</a>, however its wider adoption
+is hindered by the degree of familiarity with web technologies required
+of authors. Additionally, the proposed workflow borrows from software
+engineering; in particular, code versioning and review. The former is
+not widely adopted by the scientific community, partially contributing
+to scientific papers lacking evolution traces and provenance that could
+shine a light on their journey through rejection and acceptance at
+various workshops, conferences and journals. On the other hand, the
+software-like review process of academic writing has been adopted by The
+Open Journals<a class="footnote-reference brackets" href="#id17" id="id10">6</a>, for example, the Journal of Open Source Software<a class="footnote-reference brackets" href="#id18" id="id11">7</a>,
+further improving on the model operationalised by OpenReview.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://teachablemachine.withgoogle.com/">https://teachablemachine.withgoogle.com/</a></p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dd><p><a class="reference external" href="https://book-template.simply-logical.space/">https://book-template.simply-logical.space/</a></p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id6">3</a></span></dt>
+<dd><p><a class="reference external" href="http://cplint-template.simply-logical.space/">http://cplint-template.simply-logical.space/</a></p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id7">4</a></span></dt>
+<dd><p><a class="reference external" href="https://problog-template.simply-logical.space/">https://problog-template.simply-logical.space/</a>. ProbLog is
+unique in this aspect as it can either be executed directly from
+Python (through a custom interpreter, thus not requiring a dedicated
+plugin) or with bespoke code boxes (as is the case with SWI Prolog
+and cplint).</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id9">5</a></span></dt>
+<dd><p><a class="reference external" href="https://distill.pub/">https://distill.pub/</a></p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id10">6</a></span></dt>
+<dd><p><a class="reference external" href="https://www.theoj.org/">https://www.theoj.org/</a></p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id11">7</a></span></dt>
+<dd><p><a class="reference external" href="https://joss.theoj.org/">https://joss.theoj.org/</a>. The submission and review process is
+outlined in the journal’s documentation published at
+<a class="reference external" href="https://joss.readthedocs.io/">https://joss.readthedocs.io/</a>.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "so-cool/you-only-write-thrice",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./src/text"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="../yowt.html" title="previous page">You Only Write Thrice</a>
+    <a class='right-next' id="next-link" href="publishing_workflow.html" title="next page"><span class="section-number">2. </span>Publishing Workflow</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
+<br/>
+        
+            &copy; Copyright 2021.<br/>
+          <div class="extra_footer">
+            This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DF8Y2BNFE0"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('config', 'G-DF8Y2BNFE0');
+                </script>
+
+  </body>
+</html>

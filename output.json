@@ -1,32 +1,55 @@
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40002, "status": "unchecked", "code": 0, "uri": "", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://github.com/hakimel/reveal.js/", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 16, "status": "working", "code": 0, "uri": "https://github.com/mwouts/jupytext", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/tutorial/advanced/01_python_interface.html", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/tutorial/basic/02_bayes.html", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://dtai.cs.kuleuven.be/problog/", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice", "info": ""}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 110002, "status": "broken", "code": 0, "uri": "http://www.bnlearn.com/bnrepository/#earthquake", "info": "Anchor 'earthquake' not found"}
-{"filename": "src/problog_book_template.md", "lineno": 60, "status": "broken", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice#building-the-book", "info": "Anchor 'building-the-book' not found"}
-{"filename": "src/problog_book_template.md", "lineno": 51, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/requirements-jb.txt", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/build_slides.sh", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 51, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/blob/master/requirements.txt", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://ipython.readthedocs.io/en/stable/interactive/magics.html#cell-magics", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "redirected", "code": 302, "uri": "https://ipywidgets.readthedocs.io/", "info": "https://ipywidgets.readthedocs.io/en/stable/", "text": "with Found"}
-{"filename": "src/problog_book_template.md", "lineno": 16, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/jupytext.html", "info": ""}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "working", "code": 0, "uri": "https://img.shields.io/badge/view-slides-blue.svg", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://jupyterbook.org/", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 15, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/myst-notebooks.html", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "broken", "code": 0, "uri": "https://jupyterbook.org/interactive/launchbuttons.html#binder-buttons-for-your-pages", "info": "Anchor 'binder-buttons-for-your-pages' not found"}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "broken", "code": 0, "uri": "https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab", "info": "Anchor 'live-interactive-pages-with-thebelab' not found"}
-{"filename": "src/problog_book_template.md", "lineno": 14, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/notebooks.html", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 6, "status": "working", "code": 0, "uri": "https://pages.github.com/", "info": ""}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "redirected", "code": 301, "uri": "https://mybinder.org/badge_logo.svg", "info": "https://static.mybinder.org/badge_logo.svg", "text": "permanently"}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 350002, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#annotated-disjunctions", "info": ""}
-{"filename": "src/text/bayesian_networks-pnb.py", "lineno": 40019, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-pnb.py", "info": ""}
-{"filename": "src/text/bayesian_networks-mnb.md", "lineno": 55, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-mnb.md", "info": ""}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 130004, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#problog", "info": ""}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 240004, "status": "working", "code": 0, "uri": "https://problog.readthedocs.io/en/latest/modeling_basic.html#probabilistic-clauses", "info": ""}
-{"filename": "src/problog_book_template.md", "lineno": 18, "status": "working", "code": 0, "uri": "https://rise.readthedocs.io/en/stable/", "info": ""}
-{"filename": "src/text/bayesian_networks-mnb.md", "lineno": 55, "status": "broken", "code": 0, "uri": "https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html", "info": "404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-mnb.slides.html"}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "broken", "code": 0, "uri": "https://so-cool.github.io/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html", "info": "404 Client Error: Not Found for url: http://kcprbskl.com/you-only-write-thrice/slides/bayesian_networks-jnb.slides.html"}
-{"filename": "src/text/bayesian_networks-jnb.ipynb", "lineno": 40020, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/text/bayesian_networks-jnb.ipynb", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 85, "status": "unchecked", "code": 0, "uri": "#id2", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 126, "status": "unchecked", "code": 0, "uri": "#id3", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 128, "status": "unchecked", "code": 0, "uri": "#id4", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 82, "status": "unchecked", "code": 0, "uri": "#id5", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 83, "status": "unchecked", "code": 0, "uri": "#id6", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 126, "status": "unchecked", "code": 0, "uri": "#id7", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 126, "status": "unchecked", "code": 0, "uri": "#id8", "info": ""}
+{"filename": "src/yowt.md", "lineno": 75, "status": "unchecked", "code": 0, "uri": "#sec-slides", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 156, "status": "working", "code": 0, "uri": "https://distill.pub/", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 147, "status": "working", "code": 0, "uri": "https://book.simply-logical.space/", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 150, "status": "working", "code": 0, "uri": "http://cplint-template.simply-logical.space/", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 149, "status": "working", "code": 0, "uri": "https://book-template.simply-logical.space/", "info": ""}
+{"filename": "src/yowt.md", "lineno": 55, "status": "working", "code": 0, "uri": "https://arxiv.org/abs/2107.06639", "info": ""}
+{"filename": "src/yowt.md", "lineno": 166, "status": "working", "code": 0, "uri": "https://github.com/So-Cool/you-only-write-thrice/releases/tag/v1", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "working", "code": 0, "uri": "https://eprints.soton.ac.uk/403913/", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "working", "code": 0, "uri": "https://github.com/hakimel/reveal.js", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "working", "code": 0, "uri": "https://github.com/damianavila/RISE", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 23, "status": "working", "code": 0, "uri": "https://github.com/hakimel/reveal.js/", "info": ""}
+{"filename": "src/text/appendix.md", "lineno": 39, "status": "working", "code": 0, "uri": "https://github.com/jupyter/accessibility/", "info": ""}
+{"filename": "src/text/appendix.md", "lineno": 40, "status": "working", "code": 0, "uri": "https://github.com/marcysutton/reveal-a11y/", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "working", "code": 0, "uri": "https://github.com/rstudio/bookdown", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "redirected", "code": 302, "uri": "https://doi.org/10.5281/zenodo.1156977", "info": "https://zenodo.org/record/1156977", "text": "with Found"}
+{"filename": "src/yowt.md", "lineno": 55, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice", "info": ""}
+{"filename": "src/yowt.md", "lineno": 166, "status": "working", "code": 0, "uri": "https://github.com/simply-logical/problog-book-template", "info": ""}
+{"filename": "src/yowt.md", "lineno": 173, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice#readme", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 400, "status": "working", "code": 0, "uri": "https://github.com/so-cool/you-only-write-thrice/", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "redirected", "code": 302, "uri": "https://doi.org/10.5281/zenodo.4539666", "info": "https://zenodo.org/record/4539666", "text": "with Found"}
+{"filename": "src/slides/yowt_slides.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://img.shields.io/badge/view-slides-blue.svg", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 158, "status": "redirected", "code": 302, "uri": "https://joss.readthedocs.io/", "info": "https://joss.readthedocs.io/en/latest/", "text": "with Found"}
+{"filename": "src/text/source_multiplicity.md", "lineno": 158, "status": "working", "code": 0, "uri": "https://joss.theoj.org/", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 144, "status": "redirected", "code": 302, "uri": "https://hypothes.is/", "info": "https://web.hypothes.is", "text": "with Found"}
+{"filename": "src/yowt.md", "lineno": 24, "status": "working", "code": 0, "uri": "https://iclr.cc/virtual/2021/workshop/2142", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 23, "status": "working", "code": 0, "uri": "https://mybinder.org/", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 23, "status": "working", "code": 0, "uri": "https://jupyterbook.org/file-types/myst-notebooks.html", "info": ""}
+{"filename": "src/yowt.md", "lineno": 24, "status": "working", "code": 0, "uri": "https://jupyterbook.org/intro.html", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 151, "status": "working", "code": 0, "uri": "https://problog-template.simply-logical.space/", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 34, "status": "redirected", "code": 301, "uri": "https://mybinder.org/badge_logo.svg", "info": "https://static.mybinder.org/badge_logo.svg", "text": "permanently"}
+{"filename": "src/yowt.md", "lineno": 24, "status": "working", "code": 0, "uri": "https://rethinkingmlpapers.github.io/", "info": ""}
+{"filename": "src/yowt.md", "lineno": 24, "status": "working", "code": 0, "uri": "https://openreview.net/forum?id=i4zpuNRiU4G", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 34, "status": "working", "code": 0, "uri": "https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 23, "status": "broken", "code": 0, "uri": "https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab", "info": "Anchor 'live-interactive-pages-with-thebelab' not found"}
+{"filename": "src/slides/yowt_slides.md", "lineno": 23, "status": "working", "code": 0, "uri": "https://rise.readthedocs.io/en/stable/", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 408, "status": "redirected", "code": 301, "uri": "https://so-cool.github.io/you-only-write-thrice/", "info": "https://kcprbskl.com/you-only-write-thrice/", "text": "permanently"}
+{"filename": "src/yowt.md", "lineno": 75, "status": "working", "code": 0, "uri": "https://slideslive.com/38956531/beyond-static-papers-rethinking-how-we-share-scientific-understanding-in-ml", "info": ""}
+{"filename": "src/slides/yowt_slides.md", "lineno": 34, "status": "broken", "code": 0, "uri": "https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html", "info": "404 Client Error: Not Found for url: https://kcprbskl.com/you-only-write-thrice/src/slides/yowt_slides.slides.html"}
+{"filename": "src/text/publishing_workflow.md", "lineno": 145, "status": "working", "code": 0, "uri": "https://utteranc.es/", "info": ""}
+{"filename": "src/yowt.md", "lineno": 24, "status": "working", "code": 0, "uri": "https://twitter.com/rethinkmlpapers", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 157, "status": "working", "code": 0, "uri": "https://www.theoj.org/", "info": ""}
+{"filename": "src/text/source_multiplicity.md", "lineno": 148, "status": "working", "code": 0, "uri": "https://teachablemachine.withgoogle.com/", "info": ""}
+{"filename": "src/yowt.md", "lineno": 13, "status": "unchecked", "code": 0, "uri": "mailto:K.Sokol@bristol.ac.uk", "info": ""}
+{"filename": "src/yowt.md", "lineno": 13, "status": "unchecked", "code": 0, "uri": "mailto:Peter.Flach@bristol.ac.uk", "info": ""}
+{"filename": "src/yowt.md", "lineno": 75, "status": "working", "code": 0, "uri": "https://www.youtube.com/watch?v=GMN4TmFRwl4", "info": ""}
+{"filename": "src/text/appendix.md", "lineno": 41, "status": "working", "code": 0, "uri": "https://tailor-network.eu/", "info": ""}
+{"filename": "src/text/publishing_workflow.md", "lineno": 146, "status": "working", "code": 0, "uri": "https://zenodo.org/", "info": ""}
+{"filename": "src/text/references.md", "lineno": 1, "status": "redirected", "code": 302, "uri": "https://www.cs.bris.ac.uk/~flach/SimplyLogical.html", "info": "http://people.cs.bris.ac.uk/~flach/SimplyLogical.html", "text": "with Found"}
