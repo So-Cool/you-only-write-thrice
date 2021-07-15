@@ -1,6 +1,9 @@
 # Jupyter Book
 _build
+
+# Python
 .ipynb_checkpoints
+__pycache__
 
 # Mac OS
 .DS_Store

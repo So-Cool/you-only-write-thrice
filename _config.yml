@@ -1,36 +1,39 @@
-title: 'Interactive ProbLog<br>Book Example'
+title: 'You Only Write Thrice'
 author: >
-  <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a>,
+  <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and
+  <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>,
   University of Bristol, United Kingdom
 copyright: '2021'
-logo: src/img/wikidata.svg
+logo: src/img/yowt_logo.svg
 
 exclude_patterns:
-  - .DS_Store
-  - __pycache__
   - .github
   - README.md
-
-execute:
-  execute_notebooks: cache
-  timeout: 30
-  allow_errors: false
-  stderr_output: show
+  - .DS_Store
+  - __pycache__
+  - .ipynb_checkpoints
 
 html:
-  favicon: src/img/wikidata.svg
+  favicon: src/img/yowt_logo.svg
   use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
   extra_footer: >
-    This book is a template for building interactive ProbLog books with
-    <a href="https://jupyterbook.org/intro.html">Jupyter Book</a>.
-    The source of this book is available on
+    This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article
+    is an exhibit accompanying the
+    <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a>
+    paper published at
+    <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>.
+    The source of this article is available on
     <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
-  extra_navbar: ''
-  google_analytics_id: '268736012'
+  extra_navbar: >
+    <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
+  google_analytics_id: G-DF8Y2BNFE0
   home_page_in_navbar: true
   baseurl: 'https://so-cool.github.io/you-only-write-thrice/'
+
+bibtex_bibfiles:
+  - src/yowt.bib
 
 parse:
   myst_enable_extensions:
@@ -41,6 +44,12 @@ parse:
 repository:
   url: https://github.com/so-cool/you-only-write-thrice
 
+execute:
+  execute_notebooks: cache
+  timeout: 30
+  allow_errors: false
+  stderr_output: show
+
 launch_buttons:
   notebook_interface: 'classic'  # 'jupyterlab'
   binderhub_url: 'https://mybinder.org'
@@ -48,6 +57,8 @@ launch_buttons:
   thebe: true
 
 sphinx:
+  local_extensions:
+    bibtex_iclr: _ext
   config:
     html_extra_path:
       - README.md
@@ -55,11 +66,8 @@ sphinx:
       - .nojekyll
     numfig_format:
       figure: 'Figure %s'
-    numfig_secnum_depth: 1
-    nb_custom_formats:
-      .py:
-        - jupytext.reads
-        - fmt: py:percent
+    numfig_secnum_depth: 0
+    bibtex_default_style: 'iclr'
     # Configure Sphinx-copybutton
     # <https://sphinx-copybutton.readthedocs.io/en/latest/>
     copybutton_prompt_text: ''

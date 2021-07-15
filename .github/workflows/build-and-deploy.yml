@@ -1,5 +1,8 @@
 name: Build 🔧 the Jupyter Book 📖 and deploy 🚀 it to GitHub Pages
-on: push
+on:
+  push:
+    branches:
+      - master
 jobs:
   build-n-deploy:
     name: Build and deploy 🔧🚀
@@ -15,15 +18,15 @@ jobs:
         python-version: 3.7
     - name: Install dependencies 💾
       run: |
-        pip install -r requirements-jb.txt
-        pip install -r requirements.txt
+        pip install -r requirements-article.txt
+        pip install -r requirements-slides.txt
+    - name: Build Reveal Slides 🔧🖼️
+      run: ./build_slides.sh
     - name: Build the book 🔧📖
       run: jb build -nW .
     - name: Validate links ☑️🔗
       continue-on-error: true
       run: jb build -q --builder linkcheck .
-    - name: Build Reveal Slides 🔧🖼️
-      run: ./build_slides.sh
     - name: Deploy 🚀
       if: github.ref == 'refs/heads/master'
       uses: JamesIves/github-pages-deploy-action@3.7.1

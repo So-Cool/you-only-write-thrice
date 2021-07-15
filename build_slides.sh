@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-IN=src/text
-OUT=_build/html/slides
+IN=src/slides
+OUT=_build/html/src/slides
 
 mkdir -p $OUT
 
@@ -41,6 +41,13 @@ build_exec_deck () {
   rm $OUT/$fname
 }
 
-build_exec_deck bayesian_networks-mnb.md
-build_exec_deck bayesian_networks-jnb.ipynb
-build_exec_deck bayesian_networks-pnb.py
+# poster
+mkdir -p _build/html/src/poster
+cp src/poster/yowt_poster.pdf _build/html/src/poster/
+
+# slides
+mkdir -p _build/html/src/img/slides
+cp -r src/img/slides _build/html/src/img/
+mkdir -p _build/html/_sources/src/slides
+cp src/slides/yowt_slides.css _build/html/_sources/src/slides/
+build_exec_deck yowt_slides.md
