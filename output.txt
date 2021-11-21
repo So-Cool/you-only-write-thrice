@@ -2,8 +2,7 @@ src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo
 src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo.4539666 to https://zenodo.org/record/4539666
 src/text/source_multiplicity.md:158: [redirected with Found] https://joss.readthedocs.io/ to https://joss.readthedocs.io/en/latest/
 src/text/publishing_workflow.md:144: [redirected with Found] https://hypothes.is/ to https://web.hypothes.is
-src/slides/yowt_slides.md:34: [redirected permanently] https://mybinder.org/badge_logo.svg to https://static.mybinder.org/badge_logo.svg
-src/slides/yowt_slides.md:23: [broken] https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab: Anchor 'live-interactive-pages-with-thebelab' not found
-src/slides/yowt_slides.md:408: [redirected permanently] https://so-cool.github.io/you-only-write-thrice/ to https://kcprbskl.com/you-only-write-thrice/
-src/slides/yowt_slides.md:34: [broken] https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html: 404 Client Error: Not Found for url: https://kcprbskl.com/you-only-write-thrice/src/slides/yowt_slides.slides.html
+src/slides/yowt_slides.md:12: [redirected permanently] https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html to https://kcprbskl.com/you-only-write-thrice/src/slides/yowt_slides.slides.html
+src/slides/yowt_slides.md:404: [redirected permanently] https://so-cool.github.io/you-only-write-thrice/ to https://kcprbskl.com/you-only-write-thrice/
+src/slides/yowt_slides.md:12: [redirected permanently] https://mybinder.org/badge_logo.svg to https://static.mybinder.org/badge_logo.svg
 src/text/references.md:1: [redirected with Found] https://www.cs.bris.ac.uk/~flach/SimplyLogical.html to http://people.cs.bris.ac.uk/~flach/SimplyLogical.html

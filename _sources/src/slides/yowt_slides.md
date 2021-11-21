@@ -57,7 +57,7 @@ buttons, which appear towards the right edge of this page.
 [RISE]: https://rise.readthedocs.io/en/stable/
 [reveal.js]: https://github.com/hakimel/reveal.js/
 [mybinder]: https://mybinder.org/
-[Thebe]: https://jupyterbook.org/interactive/launchbuttons.html#live-interactive-pages-with-thebelab
+[Thebe]: https://jupyterbook.org/interactive/thebe.html
 [binder-badge]: https://mybinder.org/badge_logo.svg
 [binder-link]: https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md
 [slides-badge]: https://img.shields.io/badge/view-slides-blue.svg
@@ -165,15 +165,12 @@ def interactive_plot():
 <h3>Stagnation</h3>
 
 <div style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
 <div style="float: left; width: 45%;">
-    <img src="../img/slides/Origin_of_Species.jpg" style="width:100% margin-left: auto; margin-right: auto;">
+<img src="../img/slides/Origin_of_Species.jpg" style="width:100% margin-left: auto; margin-right: auto;">
 </div>
-
 <div style="float: right; width: 45%;">
-    <img src="../img/slides/kernels.jpg" style="width:100% margin-left: auto; margin-right: auto;">
+<img src="../img/slides/kernels.jpg" style="width:100% margin-left: auto; margin-right: auto;">
 </div>
-
 </div>
 
 +++ {"slideshow": {"slide_type": "skip"}}
@@ -233,24 +230,24 @@ preview_url(DISTILL, height=500)
 
 <div class="row">
 <div class="column">
-
-* Manuscripts
-* Presentations
-* Posters
-* Promotional videos
-* Press releases
-* Blog posts
-* Source code
-* Computational examples
-* ...
-
+<ul>
+<li>Manuscripts</li>
+<li>Presentations</li>
+<li>Posters</li>
+<li>Promotional videos</li>
+<li>Press releases</li>
+<li>Blog posts</li>
+<li>Source code</li>
+<li>Computational examples</li>
+<li>...</li>
+</ul>
 </div>
 <div class="column fragment">
-
-* Reviews
-* Revisions
-* Versions
-
+<ul>
+<li>Reviews</li>
+<li>Revisions</li>
+<li>Versions</li>
+</ul>
 </div>
 </div>
 
@@ -295,24 +292,24 @@ enforces their simplest – often static – type
 
 <div class="row">
 <div class="column">
-
 <h4>Multiple Entry Points – Single Source</h4>
-
-MyST Markdown →
-  * **Jupyter Notebook** – computational narrative
-    - Google Colab
-    - MyBinder
-  * **Reveal.JS** – interactive slides
-  * **Jupyter Book** – interactive report/document/book
-
+<p>MyST Markdown →</p>
+<ul>
+<li><b>Jupyter Notebook</b> – computational narrative</li>
+<ul>
+<li>Google Colab</li>
+<li>MyBinder</li>
+</ul>
+<li><b>Reveal.JS</b> – interactive slides</li>
+<li><b>Jupyter Book</b> – interactive report/document/book</li>
+</ul>
 </div>
 <div class="column fragment">
-
 <h4>Version-controlled Environment</h4>
-
-* Source versioning and history tracking
-* E.g., `git` or `mercurial`
-
+<ul>
+<li>Source versioning and history tracking</li>
+<li>E.g., <tt>git</tt> or <tt>mercurial</tt></li>
+</ul>
 </div>
 </div>
 
@@ -322,19 +319,18 @@ MyST Markdown →
 
 <div class="row">
 <div class="column">
-
-* **Akin to source code review**, e.g., through *Issues* and *Pull Requests*
-  infrastructure
-* **Permanently attached** to the document source
-    - Provenance record
-    - Resubmission history
-* **Conversational** review with inline comments and discussions
-
+<ul>
+<li><b>Akin to source code review</b>, e.g., through <em>Issues</em> and <em>Pull Requests</em> infrastructure</li>
+<li><b>Permanently attached</b> to the document source</li>
+<ul>
+<li>Provenance record</li>
+<li>Resubmission history</li>
+</ul>
+<li><b>Conversational</b> review with inline comments and discussions</li>
+</ul>
 </div>
 <div class="column">
-
 <img width="90%" align="middle" src="../img/slides/review.png" alt="surrogate" style="display: block; margin-left: auto; margin-right: auto;">
-
 </div>
 </div>
 
