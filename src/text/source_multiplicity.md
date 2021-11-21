@@ -112,7 +112,7 @@ solutions such as GitHub or Bitbucket. At the content-generation end,
 our workflow relies heavily on the Jupyter ecosystem. Jupyter Book and
 MyST Markdown provide basic text formatting and implement academic
 publishing features such as mathematical typesetting (with LaTeX syntax)
-and bibliography management (with [Bib]{.smallcaps}TeX). The platform is
+and bibliography management (with BibTeX). The platform is
 still in early development and exhibits certain limitations, e.g.,
 fine-grained layout customisation may be difficult, which is
 particularly noticeable with reveal.js slides. However, the Jupyter Book

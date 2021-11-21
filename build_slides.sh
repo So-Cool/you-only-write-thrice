@@ -50,4 +50,5 @@ mkdir -p _build/html/src/img/slides
 cp -r src/img/slides _build/html/src/img/
 mkdir -p _build/html/_sources/src/slides
 cp src/slides/yowt_slides.css _build/html/_sources/src/slides/
+cp src/slides/yowt_slides.css _build/html/src/slides/custom.css
 build_exec_deck yowt_slides.md

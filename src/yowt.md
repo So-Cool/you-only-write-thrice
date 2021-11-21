@@ -70,6 +70,23 @@ This paper has been reviewed on [OpenReview].
 <a class="btn btn-outline-success"
    href="https://openreview.net/forum?id=i4zpuNRiU4G">{fa}`vote-yea,style=fas` OpenReview</a>
 
+## Promotional Video ##
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
+<!--width="560" height="315"-->
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        src="https://www.youtube.com/embed/h9rL5QPBBs4"
+        title="You Only Write Thrice – Promotional Video (ICLR 2021 Rethinking ML Papers Workshop)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+</div>
+<br>
+
+<a class="btn btn-outline-danger"
+   href="https://www.youtube.com/watch?v=h9rL5QPBBs4">{fa}`youtube,style=fab` Promotional Video (YouTube)</a>
+
 ## Oral Presentation ##
 
 The oral presentation is available on [SlidesLive][oral-sl] (starting at
