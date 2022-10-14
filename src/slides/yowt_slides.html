@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>6. Slides &#8212; You Only Write Thrice</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,42 +20,41 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/yowt.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.html" />
     <link rel="shortcut icon" href="../../_static/yowt_logo.svg"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -74,7 +75,21 @@
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -83,9 +98,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -103,14 +119,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../yowt.html">
-   You Only Write Thrice
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../yowt.html">
+                    You Only Write Thrice
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../text/source_multiplicity.html">
    1. Source Multiplicity
@@ -149,13 +166,18 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
 
-<div class="navbar_extra_footer">
-  <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
-
-</div>
-
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -163,107 +185,265 @@
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+    <div class="header-article row sticky-top noprint">
+        
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../../_sources/src/slides/yowt_slides.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/src/slides/yowt_slides.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/so-cool/you-only-write-thrice/blob/master/src/slides/yowt_slides.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/slides/yowt_slides.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/slides/yowt_slides.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/src/slides/yowt_slides.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../../_sources/src/slides/yowt_slides.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/so-cool/you-only-write-thrice"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/slides/yowt_slides.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/slides/yowt_slides.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
 </div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        <button type="button" class="btn btn-secondary topbarbtn"
-            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
-                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
-        
     </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        </div>
-    </div>
-</div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Slides</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="slides">
-<span id="sec-slides"></span><h1><span class="section-number">6. </span>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="slides">
+<span id="sec-slides"></span><h1><span class="section-number">6. </span>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">#</a></h1>
 <div class="attention admonition">
 <p class="admonition-title">Content format</p>
 <p>This page is written in the <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html"><em>Markdown Notebook</em></a> format.
@@ -507,9 +687,9 @@ buttons, which appear towards the right edge of this page.</p>
 </div>
 <div class="cell_output docutils container">
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "581167a9afa14b6aa150c59b27ceb42d", "version_major": 2, "version_minor": 0}
+{"model_id": "9da62d2ed8a24949aed614e2825402ba", "version_major": 2, "version_minor": 0}
 </script><script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "c834e03ea7a347c4997b770e03082478", "version_major": 2, "version_minor": 0}
+{"model_id": "170a94ecd3ab40e7ba29b1fb5b750b6b", "version_major": 2, "version_minor": 0}
 </script></div>
 </div>
 <h3>The Way Forward</h3>
@@ -555,11 +735,11 @@ buttons, which appear towards the right edge of this page.</p>
 </div>
 <h2 style="text-align: center; vertical-align: center;">Thank You!</h2>
 <br><br><br>
-<p style="text-align: right; vertical-align:bottom; float:right; font-size: 100%;"><a href="K.Sokol@bristol.ac.uk">K.Sokol@bristol.ac.uk</a></p></div>
+<p style="text-align: right; vertical-align:bottom; float:right; font-size: 100%;"><a href="K.Sokol@bristol.ac.uk">K.Sokol@bristol.ac.uk</a></p></section>
 
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"02e46c2dae5c4cfc92a9724993f0f223": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "0f1d2e9c5ce44dfe95324f8483a1efea": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "4b17f01e0f5d4a18ae8b08aa1d221bae": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4eadaf73ab2f4b6093b53e66d4e24df0": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.10.2", "model_name": "ToolbarModel", "state": {"_current_action": "", "_dom_classes": [], "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.10.2", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.10.2", "_view_name": "ToolbarView", "button_style": "", "collapsed": true, "layout": "IPY_MODEL_4b17f01e0f5d4a18ae8b08aa1d221bae", "orientation": "vertical", "toolitems": [["Home", "Reset original view", "home", "home"], ["Back", "Back to previous view", "arrow-left", "back"], ["Forward", "Forward to next view", "arrow-right", "forward"], ["Pan", "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect", "arrows", "pan"], ["Zoom", "Zoom to rectangle\nx/y fixes axis", "square-o", "zoom"], ["Download", "Download plot", "floppy-o", "save_figure"]]}}, "5445f963a88f4581bc606686397e8abb": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "581167a9afa14b6aa150c59b27ceb42d": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "VBoxModel", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_c9402beb1fa9413cbdcf34b7c81de2ad", "IPY_MODEL_86abc8cbc533460fbd7fb16ac23de0da", "IPY_MODEL_66f4b8f95d2b4d97b1e32717b9b8a5d1", "IPY_MODEL_f2ed03ee9b054c1480c429fc213f7f58"], "layout": "IPY_MODEL_c6f41577755f4b56adc758cb3842a101"}}, "5a8c4ddd31dd4d8c9c9f8c1b1259e0c1": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "66f4b8f95d2b4d97b1e32717b9b8a5d1": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "phi", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_80715bc00b0d4acbb97db4c76131766b", "max": 6.293185307179586, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.01, "style": "IPY_MODEL_02e46c2dae5c4cfc92a9724993f0f223", "value": 0.0}}, "6c34ff50ec504807a88de7887e9684ce": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "80715bc00b0d4acbb97db4c76131766b": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "86abc8cbc533460fbd7fb16ac23de0da": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "amp", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_6c34ff50ec504807a88de7887e9684ce", "max": 4.0, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_928d2a9317924bbbb1fe4f9e8ace6c88", "value": 1.0}}, "928d2a9317924bbbb1fe4f9e8ace6c88": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "c6f41577755f4b56adc758cb3842a101": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c834e03ea7a347c4997b770e03082478": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.10.2", "model_name": "MPLCanvasModel", "state": {"_cursor": "pointer", "_data_url": "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", "_dom_classes": [], "_figure_label": "Figure", "_height": 0, "_image_mode": "full", "_message": "", "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.10.2", "_model_name": "MPLCanvasModel", "_rubberband_height": 0, "_rubberband_width": 0, "_rubberband_x": 0, "_rubberband_y": 0, "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.10.2", "_view_name": "MPLCanvasView", "_width": 0, "capture_scroll": false, "footer_visible": true, "header_visible": true, "layout": "IPY_MODEL_cd9e9d342c4f4a23b7e6c00ac1eaefee", "resizable": true, "toolbar": "IPY_MODEL_4eadaf73ab2f4b6093b53e66d4e24df0", "toolbar_position": "left", "toolbar_visible": true}}, "c9402beb1fa9413cbdcf34b7c81de2ad": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "w", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_5a8c4ddd31dd4d8c9c9f8c1b1259e0c1", "max": 10, "min": 0, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_0f1d2e9c5ce44dfe95324f8483a1efea", "value": 1}}, "cd9e9d342c4f4a23b7e6c00ac1eaefee": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f2ed03ee9b054c1480c429fc213f7f58": {"model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "model_name": "OutputModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_5445f963a88f4581bc606686397e8abb", "msg_id": "", "outputs": []}}}, "version_major": 2, "version_minor": 0}
+{"state": {"000f925e947b4716b80449dfa7bc2f9a": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.11", "model_name": "ToolbarModel", "state": {"_current_action": "", "_dom_classes": [], "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.11", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.11", "_view_name": "ToolbarView", "button_style": "", "collapsed": true, "layout": "IPY_MODEL_41e3ffd7689c419198b079de5ddaa53c", "orientation": "vertical", "toolitems": [["Home", "Reset original view", "home", "home"], ["Back", "Back to previous view", "arrow-left", "back"], ["Forward", "Forward to next view", "arrow-right", "forward"], ["Pan", "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect", "arrows", "pan"], ["Zoom", "Zoom to rectangle\nx/y fixes axis", "square-o", "zoom"], ["Download", "Download plot", "floppy-o", "save_figure"]]}}, "0753d1fc6e2646238add5e42713fa7a0": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "amp", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_61e325896da04a35bdaaa8e4e6e77205", "max": 4.0, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.1, "style": "IPY_MODEL_413aa9812d874afe8d683c3b942d94ea", "value": 1.0}}, "170a94ecd3ab40e7ba29b1fb5b750b6b": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.11", "model_name": "MPLCanvasModel", "state": {"_cursor": "pointer", "_data_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAGQCAYAAAA9TUphAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjUuMywgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy/NK7nSAAAACXBIWXMAAA9hAAAPYQGoP6dpAAA6BUlEQVR4nO3deZCceV7f+Xdm1n3fpaMklc6f1LdaLfUcMAwemMNctmPZBe8Ea7wby/pgIYAAs8QGZtcbYAIGPA5jliMYmGFjgPWAw8YYZmCGGXZm6FbfLakeqaTSUaW677sqM5/9I1M1UqsPXa18Hun9iqh4qvKqb/dXmZWf/P2e3y8TxzGSJEmSJKmyspUuQJIkSZIkGdAlSZIkSUoEA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQE+5EMKvhBDiStchSZIkSbo7BvQUCyE8BfxApeuQJEmSJN09A3pKhRCywK8Dn6h0LZIkSZKku2dAT68fAtaA3690IZIkSZKku1dV6QJ0+0IIvcDPAR+8k/vHcRxnMpl7WpMkSZKkVDIYJIgBPZ0+AfxOFEWnQwj9t3vnmZllstnKPw9zuSwtLfUsLKxSKBQrXY5uk/1LN/uXfvYw3exfutm/dLN/N2pvb6x0CbqOAT1lQggfAt4HPHanj1EsxhSLyVn4vVAoks/74phW9i/d7F/62cN0s3/pZv/Szf4piTwHPX0+DvQCl0IIU8CLACGEqRDC91W0MkmSJEnSHXMEPX1+DPjfr/u5D/ga8BQwU4mCJEmSJEl3z4CeMlEUzQKz134OIVSVLx+uWFGSJEmSpLtmQE+5KIou4sqLkiRJkpR6noMuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlQVekCdPtCCE8CnwCeAdaALwE/EkXRWCXrkiRJkiTdOUfQUyaEUAv8BaVQ3gM8BvQC/76CZUmSJEmS7pIBPX0agJ8Bfj6KovUoiiaBz1EK6pIkSZKklHKKe8pEUTQL/Na1n0MIAfhHwB9UqiZJkiRJ0t0zoKdUCGEPcI5SD38D+NlbvW82myGbzbxbpd2yXC57w1HpYv/Szf6lnz1MN/uXbvYv3eyfkiwTx3Gla9AdCiFkgAPA/w2MRVH0D2/lfnEcx5lM5QO6JEmSpIozGCSIAf0BEEJ4L/BVoKd8Tvrbmp5eipMygt7SUs/CwiqFQrHS5eg22b90s3/pZw/Tzf6lm/1LN/t3o/b2xsoHA21xinvKhBD+DqUV249EUXTtFeXaceNWHqNYjCkWk/PBTKFQJJ/3xTGt7F+62b/0s4fpZv/Szf6lm/1TEhnQ0+cFoBX41yGEnwUagX8JfCWKovlKFiZJkiRJunOujJAy5RD+7cBxYAo4BcwD31/JuiRJkiRJd8cR9BSKoug14IOVrkOSJEmSdO84gi5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCVBV6QJ0+0IIe4BfBT4A5IE/A340iqK5CpYlSZIkSboLjqCn038C5oA9wDHgUeCXKlmQJEmSJOnuGNBTJoTQBpwE/kUURUtRFA0Dv0tpNF2SJEmSlFJOcU+Z8jT2f/yGi3cBI/e/GkmSJEnSvWJAT7kQwjPADwPffav3yWYzZLOZd6+oW5TLZW84Kl3sX7rZv/Szh+lm/9LN/qWb/VOSZeI4rnQNukMhhPdTOh/9X0ZR9MlbvV8cx3EmU/mALkmSJKniDAYJ4gh6SoUQvgv4DPDDURT93u3cd2ZmOTEj6C0t9SwsrFIoFCtdjm6T/Us3+5d+9jDd7F+62b90s383am9vrHQJuo4BPYVCCO8Dfg/43iiK/uJ2718sxhSLyZk5USgUyed9cUwr+5du9i/97GG62b90s3/pZv+URJ54kTIhhCrgt4CfupNwLkmSJElKJkfQ0+e9wBHgkyGEN553HqIoulSBmiRJkiRJd8mAnjJRFH0FF3KQJEmSpAeOU9wlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABPaVCCB8JIYyHED5b6VokSZIkSXevqtIF6PaFEH4S+B+Bc5WuRZIkSZJ0bziCnk5rwAlgsNKFSJIkSZLuDUfQUyiKok8ChBAqXYqUCnEcs75ZYHk1z9pGnrWNAmubBdbWC6xvln5e3yiwkS+SLxTZLB9L38fkC0WKxZhiHJcfr/SYcfn7TAaymQy5bIZsNkMulyGXufZ9lpqqLDXVOWqrs9RU5aiuzlJblaOmOkd9bY6Guirqa0tfDbVVVOX87FSSJOlhZEB/CGXLIaLScuUQkjOMpFIl+xfHMUurmywsbzC/vMH8Uvm4vM7C8gZLq5ssr+ZZXt1kaW2T5dVN8oX4vtd5p2qqsjTUVdFUX01zQw3NjTU011fT3FBNS2MNzQ01tDXV0NZUS1tzLbXVudv+HT7/0s8eppv9Szf7l272T0lmQH8IdXQ0kslUPqBf09JSX+kSdBfejf4trWwwNrPC1Nzq1tfk3CrT82tMzq0yM796zwN3VS5DbXWO6qocVVVZqq//ymXJ5bJbI+VQGjXPZDJkgBgoFmMKxZhCoVg6lr/PF4qsbxZZ3yiwvllgY7PwjrVs5ItsLG0wt7QBLL/j7Rvrq+loqaOzpY6O1jq62urpaW+gp72eno4GutvqqXmLEO/zL/3sYbrZv3Szf+lm/5REBvSH0MzMcmJG0Fta6llYWKVQKFa6HN2mu+lfsRgzvbDG+MwKE7Ol8D0xt8rkbOm4spa/7XoyQFNDNa3lEeam+moa66tprK+iqa78/XVTyWtrctRV56irraKuJnffppXHccxmvsj6ZoH1zSKr63lW1vLl4yYr66Xvl9fyLK5ssLSyycLK5tb3K+s3/79ZXi3NErgyvviWv7e1qYau1jq62+rZ1tHA9q5G9u1qp7k2R31NLlEf2unW+BqabvYv3exfutm/G7W3N1a6BF3HgP4QKhZjisXkTPctFIrk8744ptXb9W91Pc/V6WXGplcYm/nG1/jMKvnb+IPY3FBNR3Md7c21dLTU0t5cS1tTLa2NNbQ01tDaWENTQzW57B2G7Jj7+m8wm8lQX1NFfQ20Ndbc1n3zhSKLK5vMLa2XvzaYW/zG97OL68wsrN0U5OeXSqcCnB9ZuOkxG2qr6O2op7ejgR2djWzvbGRHV2kE/o7/n+q+8TU03exfutm/dLN/SiIDuqS7trFZYHR6hZGpJUYmlxmZWmZkconphfVbun9zQzXdbfV0t9VvjfJ2t5ama3c011JddfvnWD+oqnJZ2ptLH1K8nZW1PNMLa0zNl04NmJpfY3p+jYm5VSZmV1m/bqr9ynqeodFFhkZvHIHPZTPl0N7Ajq5GdvU00dfTRHdb/dZUf0mSJN07BvQUCiGslb+tLv/89wCiKKqrVE16eCysbHB5fJGRyWVGZ1Y5d2WWsZkV4neYlFFXk2NbRwPbOhtKx/JXd1s99bW+FN1rDXVVNNQ1saun6abr4jhmeS3PSj7m3KVpxqZXGJ9ZYXSmdLx2fn+hGHN1apmrU8sQTW7dv7Y6R193I309pce/9lVXYx8lSZLuhu+mUsggrvtlfmm9PLK6wKXxRS6PL5YXLntrDbVV7OxuZGd3Ezu7GtnR1cj2zgZaG2s8zzkhMpkMbc217G1vZEd73Q3T+wrFIpNza4xOLXN1epmrUytcnV5mdGqZjfLt1jcLnL+6wPmr35gunwG2dTbQv62ZPdta6N/WzK6eJj98kSRJug2+c5IElKZEXxxbYGh0gYujiwyNLTDzNlPUs5kMu3qb6OtuZGdXE309pWNbk0E8zXLZ7NbshqN0b11eLMZMzK1yZWKJKxNLDJeP0wulCT0xMDq9wuj0Cl87NQ58I7Tv297Cvh0t7NvRSl9Po+e1S5IkvQUDuvQQiuOY8dlVBofnGRyZ5/zVea5OLvNWs9Srq7Ls7mlid28zu3tLxz3bmuntaWF2dtkFVh4C2WxmK7gfP9yzdfnK2iZXJpa4OLbIpbFFLo4tMj6zQsyNof3/e30MKO3x3r+tmX07Wtm3o4UDfa20Nb39+fSSJEkPCwO69BDYzBcZGl3g3PAcg8PznL+6wNLq5pveNpvJ0NfdSP/2FvZub2bv9hZ2dDXetA1ZVZWjoIKGumrC7nbC7vaty1bX81weLwX2obFFLlydZ3KuNNK+kS9ydnies8PzW7fvbqvjYF8bB/paOdjXxvbOBhehkyRJDyUDuvQAWl3Pc/7qPGevzHP2yhwXri685bZmbU01HNjZyoGdrezb0cru3iZqql01XXeuvrbqptC+sLzBhdEFLlyd58LV0qkUq+ulleQn59aYnBvjq+VR9sa6Kg7sbOXQ7jYO725nd2+T0+IlSdJDwYAuPQDWNvKcG55n4NIsA5dnuTS2RPFNllW/dt74wZ2t7C+H8o6WWs8Z17uupbGGpw508dSBLgCKcWmF+MHhec4Nz3NueI6p+dIo+/JanlfOT/PK+WmgtAPAwb42Du9u49DuNvq3NRvYJUnSA8mALqXQxmaB8yPznLk8x8ClWYZGFygUbw7k1VVZ9m1v4dCuUrDZv6PFrbCUCKVTKZro627ig0d3AjC7uM7gyDznrsxxdniOK+NLxMDaRoHXLkzz2oVSYK+tyXGor41H+ts5sqedvp4mp8RLkqQHgu/UpRQoxjGXxxc5NTTD6YuznBuef9Mp6zXV2W+MNO5qo39bC9WeK66UaG+u5fjhnq1F6FbWNjk7PE90eZaBy3NcHl8kjmH9DYG9uaGaI3tKYf1Ifwc9bfWV/M+QJEm6YwZ0KaGm5lc5fXGWU0MznLk0+6aLulXlshzY2cLhcjjZu73lpsXcpLRqqKu+YVr8ylqec8NzDFye5czFWS5PLAGwuLLJc2cmeO7MBFBadO6xvZ08treDw3va3YtdkiSlhu9apITYzBeIrszx2vkZXh+aZnR65abbZDLQv62FR/e2c2RPBwd2tlBd5YJuejg01FXx5IEuniwH9sWVDQYuz3H64gxnLs4yMbcKlBad++JLI3zxpRFy2Qz7d7Tw6L5SYN+zrdnp8JIkKbEM6FIFjc+u8Nr5aV4fmmHg0iwbb7KfeHdbHY/2d/BIfwdH+ttprKuuQKVS8jQ31NwwJX5qbpXTl2bLp4LMsLyWp1CMt7Z1++MvX6C5oZrH9nbyxP5OHt3bQVO9zydJkpQcBnTpPsoXikRX5nh1cJpXzk8xMbt6021qa3I8sqedx/aVAoTn00q3pqutng+01fOBJ3dQLMYMjS1w6sIMr1+c4cLIAsU4ZnFlk6+dGuNrp8bIZGD/zlae2FcK7Lt6mtzRQJIkVZQBXXqXzS+t82p5y6hTF2dY3yjcdJu+7iYe39fB4/s6OdDX6nnk0l3KZjPs39HK/h2tfPc37WVlbZMzl2Z57cI0r56fZm5pgziGweF5Bofn+dyXL9DWVMMT+0vnvB/pb6e22tNHJEnS/WVAl+6xOI4Znlzm5XOTvDw4xdDo4k23qa3J8Wh/B0/s7+TxfZ20N9dWoFLp4dFQV82x0MOx0EMcx1yZWNoK64Mj88QxzC1t8OVXrvLlV65SXZXlyJ52niqf8+5zVJIk3Q8GdOkeuDZ1/eVzU7x8borphbWbbtPTVs8TBzp58kAXh/ra3P5MqpBMJsPu3mZ29zbzHe/tZ2l1k1NDM7xyforXzk+zvJZnM1/k1fOlAM+fR+zpbebowS6OHuqmr7vRqfCSJOldYUCX7tDqep7XLkzz4tlJXrsww+p6/obrMxk41NdWXnW6k20dDb6plxKoqb6aZx/p5dlHeikUiwwOz/PK+WleGZza2k3h0vgil8YX+ZO/GaKrtY6jB7s5erCLg7tayWX9sE2SJN0bBnTpNswvb/DSuUleOjvFmUsz5AvxDdfX1uR4fF8nRw908fj+TleIllIml80SdrcTdrfz337rAcZnV3hlcJqXz01y9so8xThman6Nz5+8wudPXqGxvPXb04e6eXRvh+etS5Kku2JAl97BxNwqL0aTvHh2kvMj88RvuL6tqWZrNC3sbnfquvQA6W1v4MPHG/jw8V0srW7yymDpNJbXh2ZY3yywvJbnq6+P8dXXx6ipzvL43k6eDt08ub+TBrdElCRJt8mALr2Jq1PLvBBN8EI0yeWJpZuu397ZwNOHujl6sJv+7c1knbouPfCa6qt5/+Pbef/j29nMFzh9cZaXzk3y8rkpFlY22dgs8sLZSV44O0kum+HInnaeDqXXidbGmkqXL0mSUsCALlFaef3y+BIvnC2F8mvnnV5v7/YWnj5Umsq6vbOxAlVKSorqqlx5fYkuih+JGRyZ54XyTJvphTUKxZjXh2Z4fWiGT/95xKG+Np453MPTh7pdEV6SJL0lA7oeWnEcc3FskZMDE5yMJpicu3Hl9WuLvB0L3Tx9qJuOlroKVSopybLZDId2tXFoVxvf96EDN33YF8cQXZkjujLH73/+LAd2tnIsdHMsdNPVWl/p8iVJUoIY0PVQKcYxQ1cXOBlNcHJg8qbt0HLZDEf62zlWnr7e4rRUSbchk8mwZ1sze7Y18w8+sJ/R6WVORpO8MDCxdbrM4Mg8gyPz/MFfDbJ3ezPPHO7heOihq82wLknSw86ArgdeHMdcuLrA8+WR8pmF9Ruur8pleGxvJ8dCaaE3F3aSdK9s72zku97XyHe9r5+J2RVeiCY5GU0wNLoIwNDoIkOji/zRF8/Tv62Z44d7eOZwD92GdUmSHkoGdD2Q4jjmwugCz595q1Ce5fF9HTxzuIenDnRRX+tTQdK7q6e9gY+9Zw8fe88epuZXS2F9YILzVxcAuDi2yMWxRf7oS+WwfsSRdUmSHjamEj0wrp1T/vyZCZ4fGGf6DaG8uirLE/s6OXa4myf3G8olVU5Xaz0fObGbj5zYzczCGicHJng+muD8yBvC+hfPs3d7C8cP93D8cA+dra6FIUnSg8yEolS7tvr6cwPjPH9mgqn5G88pr8pleWJ/J8cP9/DE/k5DuaTE6Wip48MndvPha2E9muT5gfGtsD40usDQ6AJ/+MVB9u9s4fjhXo4f7qG73ZF1SZIeNKYVpdLw5BLPnZng+TPjjM+u3nBdVS7D4/tKofxJp69LSpGOljo+fHwXHz6+6xsj69dNgz8/ssD5kQU++5fnCLva+NZndvHonjYaXTtDkqQHgslFqTE2s8Jzp8d5bmCCq1PLN1yXy2Z4dG8HJ470cPRgt6FcUupdP7I+Nb/KyYHSyPq1Beaubd2WycDh3e0cP9LDsUPdNDe4+4QkSWllilGiTc2t8tzABM+dHt/aouiabCbDI/2lN6VPH+p2BEnSA6urtZ6PPrubjz67m4m5VZ4/M87zAxNcHl8ijuHMpVnOXJrlM39+lkf2tvPskV6OHuymoc4/85IkpYl/uVMohLAH+DXgPcAS8Fngp6MoKla0sHtkdnGd5wcmeO7MOBfK0zqvcaRI0sOup62e73hvP9/zzftY3izy+a9d5GunxhidXqEYx7x+YYbXL8xQlRvg8X2dnDjSy1MHuqityVW6dEmS9A4M6On0OeAFYB/QA/wpMA58opJF3Y2FlQ1eGJjgb89McO7KHPEbrj/Y18qJI708E7ppbaqtSI2SlDR9Pc38vQ/s4zveu4eRyWWeGxjnuTMTTMyuki/EvHRuipfOTVFTneXJ/V2cONLLE/s7qK4yrEuSlEQG9JQJITwDPAl8WxRF88B8COETwI+SsoC+vlHgC89d4i+fv8zpoVmK8Y2xfO/2Zk4cKa1W3NHi1kKS9FYymQx9PU309TTx9795H5fGF3nu9ATPDYwzs7DOxmaR58sLztXV5Hj6UDcnjvTwSH8HVblspcuXpIdGHMfMLq7TVF9NTbUflupmBvT0OQZcjKJo9rrLXgRCCKE5iqLFd3qAbDZDNpt51wq8Vb/46RcYuDR7w2W7epp4z6O9PPtILz3tDRWqTLciV35Tn/PNfSrZv/R7ux4e6GvjQF8b3/ftBzk/PM/XT4/z3Olx5pc3WNso8NXXx/jq62M01ldz/HAP73mkl8N72hPxt+Fh4XMw3exfulWifyOTS3z91DhfPz3O+MwKYVcbP/M/PHPffr/Sw4CePp3A7Bsumykfu4B3DOgdHY1kMpV/E3btRXFndyMfONrHNz+1k129zRWuSrerpcW9mNPM/qXfO/Wws6OJE0/spFCMOXVhii+/NMJXX73K4somy6ubfOmlEb700ghtzbV80xM7+OajOzm8p8Owfp/4HEw3+5du73b/RqeW+crLI3zl5REujt64rlJ1TY729sZ39fcrnTJx/MazfZVkIYT/DfgHURQ9c91lB4BzwL4oiobe6TGmp5fiJLzxKhRj4myOmmxMsei/w7TJ5bK0tNSzsLBKofBArE/4ULF/6Xc3PcwXipwamuHrp8Z58ewEq+uFG67vaKnl2Ue28ewjvezd3pyID3UfND4H083+pdu72b/p+TWeOzPO10+NM/SGUJ7NlLYFfs+jvZw40puYxTvb2xt9kU8QR9DTZ5LSKPr1OoG4fN07KhaTEYirqrK0t9czO7tMPu8ft7QqFIr2L8XsX/rdaQ8f7e/g0f4OfuAjh3j1/AzPD4zz8uAUG5tFZhbW+bOvX+LPvn6JnrZ6jh/p4dkjvezsTsYMrAeJz8F0s3/pdq/6N79U3oFoYILB4fkbrssAYXcbx4/0cix003LdDkT+29GbMaCnz0lgdwihK4qiqfJlx4HTURQtvc39JEm6SXVVjmOhm2Ohm/WNAq+cn+JvT4/z2oVp8oWYiblV/vRrl/jTr11ie2cDJ470cuJID9s7nZop6eG1uLLBC9Ekz50ZJ7p88w5E+3e0cLy82HF7szsQ6dYZ0FMmiqKXQgjPA78QQvgxYAfwY8AvV7YySVLa1dbkygG8l5W1PC+dm+Rvz4xz5uIshWLM6PQK//FvhviPfzPErp4mThzp4fiRXnraPA9X0oNvaXWTl85O8tzABGcu3rwD0Z7e5tLr4uEeunxd1B0yoKfTfwP8BjAGLAC/DvxaRSuSJD1QGuqqeP/j23n/49tZWt3khWiC585MMHB5ljiGKxNLXJlY4j/89QX6t5W2xXzmcDddrb4plfTguPZh5fMDE5wamqHwhtNEd3Y1cuJIDyeO9NLb4Q5EunsG9BSKomgY+LuVrkOS9HBoqq/mW57aybc8tZP55Q1ODkzw/Jlxzg3PEwMXxxa5OLbIH35xkH07Wjh+uDSC1NFSV+nSJem2ra7neXlwiufPTPD6UOl0n+v1djRw4nAPJ470sLO7qUJV6kFlQJckSbestbGGDx3r40PH+phdXOfkwATPDYxzfqS0WvGFqwtcuLrAH/zVIPt3tnA89PCMYV1Swq2u53llcIrnByZ47cIM+Tes7t7dVseJ8jnlu3qaXDBT7xoDuiRJuiPtzbV8+/FdfPvxXUzPr3EymuD5gQkuXC2F9fMjC5wfWeCzfzXI/h0tPHO4h2dCD52thnVJlbe6nueFaIKTA5O8en76plDe2VJXmhF0pIf+bW45qfvDgC5Jku5aZ2sdHzmxm4+c2M3U3Cony6sbXxxbBOD81QXOl0fW9+1o4ZnQ4znrku67lbU8rw1N8/LgNC8OTLB5Uyiv5ZnDPRw/3Mve7YZy3X8GdEmSdE91tdXz0Wd389FndzM5t8rJaIKTAxMMjZbC+rVp8H/4xUH2bm/mWOjhWOimt90FliTde8trm7x8boqTAxOcujhz0znlHS21PBNKI+X7trcYylVRBnRJkvSu6W6r52PP7uFjz+7ZGll/fmCCodHSNPih0UWGRhf5f790nl09TTwTujkWetjR5T7rku7cwvIGL56b5IVokoFLszetvt7T0cCxQ908fajLUK5EMaBLkqT74vqR9an5VV6MJjkZTTI4Mg98Y+u2P/7KENs7GzgWunn6UDd7ep1mKumdzSys8cLZUig/NzzHG7Ypp6etnmOHu3nPo9s4emQbc3Mr5PPFN38wqUIM6JIk6b7raq3nwyd28+ETu5ldXOfFs5O8EE0QXSm9qR6dXuE/f/US//mrl+hsqeXooW6OHermYF8b2axhXVLJ1allXjo3yYtnJ7dOo7le6cO+Ho4d6mZ3b2n19aqqrB/6KbEM6JIkqaLam2u3tm67Ni31xbOTnLlYmpY6vbDOF04O84WTwzQ3VPPUgS6OHurmkT3t1FTnKl2+pPuoGMcMjS7w4tlJXjo7xdjMyk232dPbzNOh9KGep8sobQzokiQpMVoaa/jgUzv54FM7WVnL8+r5KV44O8lrF6bZ2CyyuLLJV14d5SuvjlJTneWxvZ0cPdjFkwe6aKqvrnT5kt4Fm/kiA5dnefncFC+dm2RuaeOG6zPAgb5Wjh7s5ljoprvN3SGUXgZ0SZKUSA11Vbzn0W2859FtbGwWODU0wwtnJ3llcIrltTwbm0VePFsabc9mMhzsay2F9YNdrggvpdziygavnp/m5cEpXh+aYX2jcMP1VbkMj/R38PShbp480EVrY02FKpXuLQO6JElKvJrqHEcPdXP0UDeFYpHB4XlePFsaTZuaX6MYx0RX5oiuzPHZvxpkW0cDTx3o4skDnRzoayWXzVb6P0HS24jjmLGZFV4ZLIXyN1vkrb62iif2l2bNPL6vk/pao4wePP6rliRJqZLLZgm72wm72/m+Dx1gZHKZF89N8tK5KS6NlRaJGptZ4b8+d5n/+txlGuuqeHxfJ08c6OSxvZ1OhZcSYjNfJLoyy6uD07xyforJubWbbtPVWsdTB7s4eqCLg7vaqMr5YZsebAZ0SZKUWplMhr6eJvp6mvju9+9ldnGdV85P8cq5KU5fmmUzX2R5Lc/XT4/z9dPjZDKwf2crT+zr5In9nezqaXI1Z+k+mllY4/WhGV4ZnOL0xVnWNws33Wbv9maeOtjN0QNd7Oxu9Dmqh4oBXZIkPTDam2u3Fplb3yxw5tIsrwxO8crgFHNLG8QxDA7PMzg8z+e+fIG2phoe39fJ4/s6eaS/nYY6R9eleylfKHLuyhyvDc3w+oVphieXb7pNXU2OR/d28MT+Tp7Y10lrU20FKpWSwYAuSZIeSLXVOZ460MVTB7qI45grE0u8en6aVy9Mc35knjiGuaWNrVXhs5kM+3a08NjeDh7d28He7S3uuS7dgYnZFU4NzfDahRnOXHrzUfLe9nqePNDFE/s7OeTUdWmLAV2SJD3wMpkMu3ub2d3bzHe+r5+l1U1OX5zh1fPTvHZhmsWVTYpxzODIPIMj8/zJ3wzRWFfFkf4OHtvbwSN72uly6ybpTS2tbjJwaZZTF2c4NTTD1PzN55LXVGU5vKedx/d18ti+DndakN6CAV2SJD10muqrOXGklxNHeinGMZfHF3n9wgyvD81wfmSeQjFmeS3PyYEJTg5MANDdVscj/R0c2dPOkT3tNDe4rZMeThubBc6PzHP60iynL85wcXSR+E1ut72zYesUkkO7Wqmuyt33WqW0MaBLkqSHWjaToX9bC/3bWvjO9/Wzup5n4PIsrw/NcOrCDBNzqwBMzq3x1y9f5a9fvgrArp4mjuxp5/Cedg71tdFQ59sqPZjyhSIXri4wcGmWgcuzDI4skC8Ub7pdU301j/S382h/B4/0d9DZWleBaqV08y+JJEnSdeprqzh6sJujB7sBmJxb5Ux5pPDMpVkWVzYBuDKxxJWJJf7i+StkMrC7t5mwq43Du9s5tKvVBeeUWpv5IkOjC5y9Mkd0ZY5zw3NsbN4cyKtyWQ7tat0K5Lt6m8i64rp0VwzokiRJb6O7rZ7utno+8OQOinHMyOQyZy7OcPrSLNGVOdY3CsQxXBpb5NLYYimwA7t6mzjY18bBvlYO9rXR3uzK1Eqm1fU856/Oc/bKPGevzHHh6puPkOeyGfbuaOHI7tLMkQM7W5y2Lt1jBnRJkqRblM1k2NXTxK6eJj58YjeFYpFLY0tEV2aJLs9x9socaxsFYuDy+BKXx5f4yxeGAehqreNgXysH+to4sqed1lYXydL9F8cx0wtrDI7Mc35kgcGRea6ML1GMbz6LPJvJsGdbE4f3tHNkdzsH+lqpqzE+SO8mn2GSJEl3KJfNsm9HC/t2tPCxZ/dQKBa5PL5EdHmO6PIsgyPzLK/lAZiaX2Nqfo2vnRoHoKGuiv5tLezb0cy+7a3s29FCS6MLz+neWt8scHl8kQtXF7Z2KZhf2njT21ZXZdm3vYVDu9o4tLuN/TtaDOTSfeYzTpIk6R7JZbPs3d7C3u0tfPTZ3RTjmNHpFQaH5zg3PM/g8PzWonMra3lOX5zh9MWZrft3tdaxb0fp/v3bStvC1df6dk23Jl8oMjK5zNDYAhdHFxgaXWRkcvlNR8ehtKjbgZ2t7N9ZCuX921qornI/cqmSfMWXJEl6l2QzGXZ2NbKzq5FveWonAPNL61wYXWBkepVTF6YYurrARr50vu+1UfbnzkxsPUZvRwP925rZ09tcDu1NLkAnNjYLDE8uc3lisXw6xSJXJpbYzN987jhABtjZ3VgO5K0c2NlKT3s9GRd1kxLFgC5JknQftTbVcvxILx9ub2R2dpn1jTzDE8tcGF3gwtV5LlxdYGx6ZWtf6fGZFcZnVvjb0+Nbj9HZUsuunmb6ehpLx+5GetsbyGYNWw+aOI6ZXVzn6tQyw5PLXCkH8tHplbccGYfSv5H+8myOvdua2bOtxa0ApRTwWSpJklRBuWyWPdua2bOtmW89WhplX13Pc2ViiUtji1wcW+TS+CKj08tcy2PTC+tML6zz8uDU1uPUVGXZ3tXIjs4GdnQ1sr2zke2dDfS015PLOm056eI4Zm5pg7GZFa5OLTMyucTw1DIjk8usruff9r7tzbXs7mliz7bmrVDe6noGUioZ0CVJkhKmvraqtFDXrraty9Y3ClyeWGS4vP/6lcklhieWWd8sALCRL25t9Xa9qlyG3vYGtnU20NteCuy97fX0tDfQ1lTjFOf7bHU9z+TcKmMzK4xNrzA2s8JoeZbE2kbhbe+bycC2jgZ295ZOddjd08yu3iZaGgzj0oPCgJ5CIYRngM8CU1EUvafS9UiSpHdfbU2uvK9629ZlxThmam6VKxOlqc9Xp1cYnVpmbGaFQrE03J4vxIxMLTMytXzTY9ZUZ+lpa6C3vZ7O1jo6W+voaikfW+s81/0ObGwWmF1cZ2Zhjcn5NSbnVq/7WmNpdfOWHqezpY6d3Y3s7G6kr6uJnd2lGRHuOy492AzoKRNC+O+BnwdOAe0VLkeSJFVQNpOhp72BnvYGjoXurcsLxSITs6uMTq8wOr3M1allxmZWmZhd2dr2DWBjs8jw5BLDk0tv+vj1tVV0ttTS1lxLW1Ppq72ppvR9+bKm+uqHYuXvQrHI4som80sbLK9vslmc5urEIlPzq8wurDOzuMbMwvotB3AobWvW297Ato56tnU2sK2jgW0dpSDu6v3Sw8lnfvrUAe8B/mfgoxWuRZIkJVAumy2fg94IdN9w3dLqJuOzK0zMrJaOs6XR3amFtZv2x15dzzM8mWd48ubR9+vV1+Zoqq+muaGG5vpqmhpK3zfUVlFfW1U61lVt/Vxfm6O2OkdNdY7qqizZ+zTNfjNfZH2zwNp6nrXNAusbBdY2Cqyu51le22R5Lc/y6mbp+9XSZYur5VC+uslbL8n21hrrquhqq6e7rZ7utrrSsbWe3o56Olrq7tt/u6R0MKCnTBRFvw0QQqh0KZIkKYWa6qtpqm9l/47Wm67bzBeYWVhnamGN6fKWbzMLa8wvrTO3tMHc0voNI/DXrK4XWF0vMDm3dkc11VRlqa7KUlOdo6YqS1UuSy6bIZvN3HDMlVepj4E4Li2sBlAsX1AoxmwWiuQLMfl8sfx96Wtjs7g17f9eyWUztDfX0tFSR0dzLe0ttXQ019FRPna11dHoaQKSboMB/SGULf+hq7RcLnvDUeli/9LN/qWfPUy3pPavqirLzrpqdvY0veVtNjYLzC2tM7u4wfzSOgsrGyyubLL4JseV9Twbm2++L/cNj5kvspEvvmn4v5+qchma6qtprK+mqa50bKyvorWxltamGlobS1/tLXX0bW+luJmneI9Dv959SX3+SWBAT5wQwseBT7/F1T8YRdGn7vZ3dHQ0JmrF1paW+kqXoLtg/9LN/qWfPUy3tPavt+fWb5svFFle3WRlrTyNfHWTlbVN1jcKrG+WvzZuPBYKMYViacR76/tCvDUCnslAhkzpmGHrfU1VrjQSX12VpTqXpera91Wlkfn6utIU+7qa0nT7utpcecp9Nc2N1dRW527zPZKrp6dZWp9/erAZ0BMmiqLPAJ95N3/HzMxyYkbQW1rqWVhYpVB450/XlSz2L93sX/rZw3R7GPtXl4O6xmo6G5M45bvI6vI6q7d464exfw8S+3ej9vbGSpeg6xjQH0LFYpyo6ViFQpF83hfHtLJ/6Wb/0s8eppv9Szf7l272T0nkiReSJEmSJCWAI+gpE0KIgD2UepcNIVxbLjVEUXSpcpVJkiRJku6GAT1loihyfzVJkiRJegA5xV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEqCq0gXo9oQQOoFPAB8BqoG/Bn4kiqIrFS1MkiRJknRXHEFPn08BvcBjwEGgBvidShYkSZIkSbp7BvQUCSFkgGHgJ6IomoqiaAb4deCbytdJkiRJklLKKe4pEkVRDPyTN1y8CxgtXydJkiRJSikDeoqFEPqB/xP4qdu5XzabIZut/IB7Lpe94ah0sX/pZv/Szx6mm/1LN/uXbvZPSZaJYwdekySE8HHg029x9Q9GUfSp8u0OA38B/FEURT9+O78jjuM4k6l8QJckSZJUcQaDBDGgp1AI4QTwX4BfjqLo52/3/tPTS3FSRtBbWupZWFilUChWuhzdJvuXbvYv/exhutm/dLN/6Wb/btTe3lj5YKAtTnFPmRDCQeBPKS0U96k7eYxiMaZYTM4HM4VCkXzeF8e0sn/pZv/Szx6mm/1LN/uXbvZPSeSJF+nz74DfvNNwLkmSJElKJkfQUySEsAv4duBbQgg/9oarPxxF0ZcrUJYkSZIk6R4woKdIFEVXcBEHSZIkSXogOcVdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgIY0CVJkiRJSgADuiRJkiRJCWBAlyRJkiQpAQzokiRJkiQlgAFdkiRJkqQEMKBLkiRJkpQABnRJkiRJkhLAgC5JkiRJUgJUVboA3Z4QQj/wq8AHgBj4W+BHoyg6W8GyJEmSJEl3yRH09PkTYAzYDfQDC8AfVLAeSZIkSdI9YEBPkRBCDfBvgZ+OomgpiqJF4P8BHg0hZCpbnSRJkiTpbjjFPUWiKNoAfvvazyGEXcA/Bf4wiqK4YoVJkiRJku6aAT2lQgjrQA3wx8AP3c59s9kM2WzlB9xzuewNR6WL/Us3+5d+9jDd7F+62b90s39KskwcO/CaJCGEjwOffourfzCKok9dd9s+4JeAPuADURQVb+V3xHEcZzKVD+iSJEmSKs5gkCAG9JQLIWwHrgLHoyg6eSv3mZ5eipMygt7SUs/CwiqFwi19tqAEsX/pZv/Szx6mm/1LN/uXbvbvRu3tjZUPBtriFPcUCSEE4AvAU1EUTZcvvvaqsnmrj1MsxhSLyflgplAoks/74phW9i/d7F/62cN0s3/pZv/Szf4piQzo6TIIzAOfDCH8M6AA/DxwHjhTycIkSZIkSXfHlRFSJIqiAvAdQBMwDFwEtgHfWV7hXZIkSZKUUo6gp0wURZeA76l0HZIkSZKke8sRdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYECXJEmSJCkBDOiSJEmSJCWAAV2SJEmSpAQwoEuSJEmSlAAGdEmSJEmSEsCALkmSJElSAhjQJUmSJElKAAO6JEmSJEkJYEBPsRDCj4QQ4hBCf6VrkSRJkiTdHQN6SoUQdgA/Uek6JEmSJEn3hgE9vf4N8OuVLkKSJEmSdG9UVboA3b4QwseAJ4CPA//qdu+fzWbIZjP3vK7blctlbzgqXexfutm/9LOH6Wb/0s3+pZv9U5Jl4jiudA26DSGEeuB14H+JoujzIYQY2BtF0cXKViZJkiRJuhuOoCdMCOHjwKff4uofBA4CJ6Mo+vz9q0qSJEmS9G4zoCdMFEWfAT7zZteFEA4Dvwg8dT9rkiRJkiS9+zzxIl3+O6AVeDWEMBVCmCpf/mII4ScrWJckSZIk6S45gp4uvwL89hsuuwL8XeD0/S9HkiRJknSvuEhcyrlInCRJkiQ9GAzokiRJkiQlgOegS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAt1lTRYQQ9gC/BrwHWAI+C/x0FEXFihamWxZC+Ajwe8AXoyj6vkrXo1tXfv79KvABIA/8GfCjURTNVbAs3aIQwpPAJ4BngDXgS8CPRFE0Vsm6dPtCCL9C6bmXqXQtunXlHXQ2gOtXWv7NKIp+uEIl6TaFEH4G+OdAC/A14H9yRyQlhSPoqpTPASPAPuDbgL8P/GglC9KtCyH8JPBJ4Fyla9Ed+U/AHLAHOAY8CvxSJQvSrQkh1AJ/QSmU9wCPAb3Av69gWboDIYSngB+odB26YyGKorrrvgznKRFC+GfAx4EPAtuB08CPVbIm6XqOoOu+CyE8AzwJfFsURfPAfAjhE5QC+icqWZtu2RpwAvg3QF2Fa9FtCCG0AScpzVhZApZCCL8L/K8VLUy3qgH4GeBTURTlgckQwucAw0GKhBCywK9T+pv3rypcjvSw+XHgJ6Ioiso/+/dPiWJAVyUcAy5GUTR73WUvAiGE0BxF0WKF6tItiqLokwAhhEqXottUnsb+j99w8S5KM1qUcOXXzd+69nMoPQn/EfAHlapJd+SHKH3Q+fsY0NPqF0II76M0RfoPgR8rf+ipBAsh7AT2Au0hhNOUZiB9EfgnURRNVrQ4qcwp7qqETmD2DZfNlI9d97kW6aFWntHyw8D/VeladOtCCHtCCBvAGeA54GcrXJJuUQihF/g54J9Wuhbdsa8DXwAOAu+ltJ7Or1W0It2qvvLxeymdYvlk+bLfrFhF0hsY0FUpLogjVVgI4f2Uzmf+F1EUfaHS9ejWRVF0CagFAnAI+HRlK9Jt+ATwO1EUna50IbozURS9N4qi34qiaD2KojPATwH/sLxGhJLt2vvPX4yi6GoURcOUPuD87hCCp+wpEQzoqoRJSqPo1+uktBqq04uk+yCE8F3Af6G0gvQnK12Pbl8URXEUReconZP+/SGE7krXpLcXQvgQ8D7g/6h0LbqnLgI5Sgs3Ktmu7XYxd91lFykFd/unRDCgqxJOArtDCNdPZz8OnPb8LendVz5v8veA742i6PcqXY9uXQjh74QQovIiY9dc255yoxI16bZ8nNI5r5dCCFOU1l8hhDAVQnC7yhQIIRwNIfzyGy4+AqwDVytQkm7PMLAAPHXdZf3AJvZPCZGJ4/idbyXdYyGErwOvU9rWYgelkbxfjqLo31W0MN2WEMKngDr3QU+PEEIV8Crwq1EU/Ual69HtCSG0AhGlKe0/CzRS+rClMYqiD1SyNr2zEEI7pZ5d00dpD+ZdwEwURSsVKUy3rLzI2ACldTt+hdJ2lX8M/GUURa4GngLlnYO+B/gIpbD+x0AURdEbF1CVKsKArooIIfQBv0FpD8oFStvN/FwURf6DTIEQwlr52+rycRMgiiLP30q4EMI3A1+mNNpz09Xlc5uVYCGEx4F/S2mrwyXgr4Afj6LIlfhTJoTQDwxFUeS6LCkSQvgA8AvA45ReS38X+Jkoitbe9o5KhPJaAZ8Avp/S+5j/APxzZ3EqKQzokiRJkiQlgOegS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQEM6JIkSZIkJYABXZIkSZKkBDCgS5IkSZKUAAZ0SZIkSZISwIAuSZIkSVICGNAlSZIkSUoAA7okSZIkSQlgQJckSZIkKQH+f+acGjktfx+YAAAAAElFTkSuQmCC", "_dom_classes": [], "_figure_label": "Figure", "_image_mode": "full", "_message": "", "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.11", "_model_name": "MPLCanvasModel", "_rubberband_height": 0, "_rubberband_width": 0, "_rubberband_x": 0, "_rubberband_y": 0, "_size": [1000.0, 400.0], "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.11", "_view_name": "MPLCanvasView", "capture_scroll": false, "footer_visible": true, "header_visible": true, "layout": "IPY_MODEL_1fa50e77a837486193808035fb6d098d", "pan_zoom_throttle": 33.0, "resizable": true, "toolbar": "IPY_MODEL_cfddc029486b4dc69759e46ca8e7b2e0", "toolbar_position": "left", "toolbar_visible": "fade-in-fade-out"}}, "1fa50e77a837486193808035fb6d098d": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2892aefba6b24f99924e7114cd5e6694": {"model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "model_name": "OutputModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_f883e15bebd84484a0b193da7706d0e0", "msg_id": "", "outputs": []}}, "3d8ed3aaf3b9469997fd1367710483ac": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4134e2c56ef94a578e683bdbe95894cc": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "413aa9812d874afe8d683c3b942d94ea": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "41e3ffd7689c419198b079de5ddaa53c": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "50df5759718b4fea9f45f6430e90a301": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "53360048fed443e0a0d1aa15edade0c4": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "SliderStyleModel", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "SliderStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "StyleView", "description_width": "", "handle_color": null}}, "61e325896da04a35bdaaa8e4e6e77205": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "641368a6613e4722b30ba9b10956d88b": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "FloatSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "FloatSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "FloatSliderView", "continuous_update": true, "description": "phi", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_3d8ed3aaf3b9469997fd1367710483ac", "max": 6.293185307179586, "min": 0.0, "orientation": "horizontal", "readout": true, "readout_format": ".2f", "step": 0.01, "style": "IPY_MODEL_50df5759718b4fea9f45f6430e90a301", "value": 0.0}}, "8b9734174f4742e3955780b3303077b2": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "9da62d2ed8a24949aed614e2825402ba": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "VBoxModel", "state": {"_dom_classes": ["widget-interact"], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_bc79b86e71f641529a093d2d3f43e92e", "IPY_MODEL_0753d1fc6e2646238add5e42713fa7a0", "IPY_MODEL_641368a6613e4722b30ba9b10956d88b", "IPY_MODEL_2892aefba6b24f99924e7114cd5e6694"], "layout": "IPY_MODEL_4134e2c56ef94a578e683bdbe95894cc"}}, "bc79b86e71f641529a093d2d3f43e92e": {"model_module": "@jupyter-widgets/controls", "model_module_version": "1.5.0", "model_name": "IntSliderModel", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "1.5.0", "_model_name": "IntSliderModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "1.5.0", "_view_name": "IntSliderView", "continuous_update": true, "description": "w", "description_tooltip": null, "disabled": false, "layout": "IPY_MODEL_e0f2e2d074d149a09c06abdcbb53876f", "max": 10, "min": 0, "orientation": "horizontal", "readout": true, "readout_format": "d", "step": 1, "style": "IPY_MODEL_53360048fed443e0a0d1aa15edade0c4", "value": 1}}, "cfddc029486b4dc69759e46ca8e7b2e0": {"model_module": "jupyter-matplotlib", "model_module_version": "^0.11", "model_name": "ToolbarModel", "state": {"_current_action": "", "_dom_classes": [], "_model_module": "jupyter-matplotlib", "_model_module_version": "^0.11", "_model_name": "ToolbarModel", "_view_count": null, "_view_module": "jupyter-matplotlib", "_view_module_version": "^0.11", "_view_name": "ToolbarView", "button_style": "", "collapsed": true, "layout": "IPY_MODEL_8b9734174f4742e3955780b3303077b2", "orientation": "vertical", "toolitems": [["Home", "Reset original view", "home", "home"], ["Back", "Back to previous view", "arrow-left", "back"], ["Forward", "Forward to next view", "arrow-right", "forward"], ["Pan", "Left button pans, Right button zooms\nx/y fixes axis, CTRL fixes aspect", "arrows", "pan"], ["Zoom", "Zoom to rectangle\nx/y fixes axis", "square-o", "zoom"], ["Download", "Download plot", "floppy-o", "save_figure"]]}}, "e0f2e2d074d149a09c06abdcbb53876f": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "f883e15bebd84484a0b193da7706d0e0": {"model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "model_name": "LayoutModel", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}}, "version_major": 2, "version_minor": 0}
 </script>
 
 
@@ -585,9 +765,11 @@ buttons, which appear towards the right edge of this page.</p>
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="../text/appendix.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -596,31 +778,33 @@ buttons, which appear towards the right edge of this page.</p>
         </div>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
 <br/>
-        
-            &copy; Copyright 2021.<br/>
-          <div class="extra_footer">
-            This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+  
+      &copy; Copyright 2021.<br/>
+    <div class="extra_footer">
+      This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
 
-          </div>
-      </p>
     </div>
-  </footer>
-</main>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

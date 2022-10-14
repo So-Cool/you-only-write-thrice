@@ -1,8 +1,9 @@
-src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo.1156977 to https://zenodo.org/record/1156977
-src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo.4539666 to https://zenodo.org/record/4539666
-src/text/source_multiplicity.md:158: [redirected with Found] https://joss.readthedocs.io/ to https://joss.readthedocs.io/en/latest/
 src/text/publishing_workflow.md:144: [redirected with Found] https://hypothes.is/ to https://web.hypothes.is
-src/slides/yowt_slides.md:12: [redirected permanently] https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html to https://kcprbskl.com/you-only-write-thrice/src/slides/yowt_slides.slides.html
-src/slides/yowt_slides.md:404: [redirected permanently] https://so-cool.github.io/you-only-write-thrice/ to https://kcprbskl.com/you-only-write-thrice/
+src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo.1156977 to https://zenodo.org/record/1156977
+src/text/source_multiplicity.md:158: [redirected with Found] https://joss.readthedocs.io/ to https://joss.readthedocs.io/en/latest/
+src/slides/yowt_slides.md:1: [redirected with Found] https://jupyterbook.org/file-types/myst-notebooks.html to https://jupyterbook.org/en/stable/file-types/myst-notebooks.html
+src/yowt.md:1: [redirected with Found] https://jupyterbook.org/intro.html to https://jupyterbook.org/en/stable/intro.html
+src/slides/yowt_slides.md:1: [redirected with Found] https://jupyterbook.org/interactive/thebe.html to https://jupyterbook.org/en/stable/interactive/thebe.html
 src/slides/yowt_slides.md:12: [redirected permanently] https://mybinder.org/badge_logo.svg to https://static.mybinder.org/badge_logo.svg
+src/text/references.md:1: [redirected with Found] https://doi.org/10.5281/zenodo.4539666 to https://zenodo.org/record/4539666
 src/text/references.md:1: [redirected with Found] https://www.cs.bris.ac.uk/~flach/SimplyLogical.html to http://people.cs.bris.ac.uk/~flach/SimplyLogical.html

@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>You Only Write Thrice &#8212; You Only Write Thrice</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,40 +20,39 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/yowt.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
     <link rel="canonical" href="https://so-cool.github.io/you-only-write-thrice/src/yowt.html" />
     <link rel="shortcut icon" href="../_static/yowt_logo.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -72,7 +73,21 @@
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -81,9 +96,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -101,14 +117,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    You Only Write Thrice
+                </a>
+            </li>
+        </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
-   You Only Write Thrice
-  </a>
- </li>
-</ul>
-<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="text/source_multiplicity.html">
    1. Source Multiplicity
@@ -147,93 +164,198 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
-
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
+            <div class="navbar_extra_footer">
+            <a href="https://doi.org/10.5281/zenodo.5106062"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5106062.svg" alt="DOI"></a>
 
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/src/yowt.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/so-cool/you-only-write-thrice"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/yowt.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/yowt.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice/issues/new?title=Issue%20on%20page%20%2Fsrc/yowt.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/so-cool/you-only-write-thrice/edit/master/src/yowt.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/src/yowt.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#abstract">
    Abstract
@@ -293,17 +415,92 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>You Only Write Thrice</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract">
+   Abstract
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#static-document">
+   Static Document
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review">
+   Review
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#promotional-video">
+   Promotional Video
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#oral-presentation">
+   Oral Presentation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slides">
+     Slides
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slideslive">
+     SlidesLive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#youtube">
+     YouTube
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#poster">
+   Poster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citation">
+   Citation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about">
+   About
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="you-only-write-thrice">
-<span id="yowt"></span><h1>You Only Write Thrice<a class="headerlink" href="#you-only-write-thrice" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="you-only-write-thrice">
+<span id="yowt"></span><h1>You Only Write Thrice<a class="headerlink" href="#you-only-write-thrice" title="Permalink to this headline">#</a></h1>
 <h1>Creating Documents, Computational Notebooks
     and Presentations From a Single Source
 </h1>
@@ -326,10 +523,10 @@ Bristol, United Kingdom</p>
 <p>This <a class="reference external" href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the
 <a class="reference external" href="https://openreview.net/forum?id=i4zpuNRiU4G">“You Only Write Thrice”</a> paper published at
 <a class="reference external" href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers</a> – <a class="reference external" href="https://iclr.cc/virtual/2021/workshop/2142">ICLR 2021 Workshop</a>
-(<a class="reference external" href="https://twitter.com/rethinkmlpapers"><span class="fab fa-twitter"></span></a>).</p>
+(<a class="reference external" href="https://twitter.com/rethinkmlpapers"><span class="fa fa-twitter,style=fab"></span></a>).</p>
 </div>
-<div class="section" id="abstract">
-<span id="id1"></span><h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">¶</a></h2>
+<section id="abstract">
+<span id="id1"></span><h2>Abstract<a class="headerlink" href="#abstract" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><p>Academic trade requires juggling multiple variants of the same content
 published in different formats: manuscripts, presentations, posters
@@ -350,27 +547,27 @@ underlying code issue management infrastructure. An exhibit of our
 workflow can be previewed at
 <a class="reference external" href="https://so-cool.github.io/you-only-write-thrice/">https://so-cool.github.io/you-only-write-thrice/</a>.</p>
 </div></blockquote>
-</div>
-<div class="section" id="static-document">
-<h2>Static Document<a class="headerlink" href="#static-document" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="static-document">
+<h2>Static Document<a class="headerlink" href="#static-document" title="Permalink to this headline">#</a></h2>
 <p>In addition to this online document, the paper can be downloaded as a PDF
 either from <a class="reference external" href="https://openreview.net/forum?id=i4zpuNRiU4G">OpenReview</a> or <a class="reference external" href="https://arxiv.org/abs/2107.06639">arXiv</a>.
 The source of this article is available on <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.</p>
 <p><a class="btn btn-outline-primary"
-   href="https://openreview.net/forum?id=i4zpuNRiU4G"><span class="fas fa-file-pdf"></span> OpenReview (PDF)</a>
+   href="https://openreview.net/forum?id=i4zpuNRiU4G"><span class="fa fa-file-pdf,style=fas"></span> OpenReview (PDF)</a>
 <a class="btn btn-outline-primary"
-   href="https://arxiv.org/abs/2107.06639"><span class="fas fa-file-pdf"></span> arXiv (PDF)</a>
+   href="https://arxiv.org/abs/2107.06639"><span class="fa fa-file-pdf,style=fas"></span> arXiv (PDF)</a>
 <a class="btn btn-outline-primary"
-   href="https://github.com/so-cool/you-only-write-thrice"><span class="fas fa-book"></span> GitHub (Jupyter Book)</a></p>
-</div>
-<div class="section" id="review">
-<h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+   href="https://github.com/so-cool/you-only-write-thrice"><span class="fa fa-book,style=fas"></span> GitHub (Jupyter Book)</a></p>
+</section>
+<section id="review">
+<h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">#</a></h2>
 <p>This paper has been reviewed on <a class="reference external" href="https://openreview.net/forum?id=i4zpuNRiU4G">OpenReview</a>.</p>
 <p><a class="btn btn-outline-success"
-   href="https://openreview.net/forum?id=i4zpuNRiU4G"><span class="fas fa-vote-yea"></span> OpenReview</a></p>
-</div>
-<div class="section" id="promotional-video">
-<h2>Promotional Video<a class="headerlink" href="#promotional-video" title="Permalink to this headline">¶</a></h2>
+   href="https://openreview.net/forum?id=i4zpuNRiU4G"><span class="fa fa-vote-yea,style=fas"></span> OpenReview</a></p>
+</section>
+<section id="promotional-video">
+<h2>Promotional Video<a class="headerlink" href="#promotional-video" title="Permalink to this headline">#</a></h2>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <!--width="560" height="315"-->
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
@@ -383,34 +580,34 @@ The source of this article is available on <a class="reference external" href="h
 </div>
 <br>
 <p><a class="btn btn-outline-danger"
-   href="https://www.youtube.com/watch?v=h9rL5QPBBs4"><span class="fab fa-youtube"></span> Promotional Video (YouTube)</a></p>
-</div>
-<div class="section" id="oral-presentation">
-<h2>Oral Presentation<a class="headerlink" href="#oral-presentation" title="Permalink to this headline">¶</a></h2>
+   href="https://www.youtube.com/watch?v=h9rL5QPBBs4"><span class="fa fa-youtube,style=fab"></span> Promotional Video (YouTube)</a></p>
+</section>
+<section id="oral-presentation">
+<h2>Oral Presentation<a class="headerlink" href="#oral-presentation" title="Permalink to this headline">#</a></h2>
 <p>The oral presentation is available on <a class="reference external" href="https://slideslive.com/38956531/beyond-static-papers-rethinking-how-we-share-scientific-understanding-in-ml">SlidesLive</a> (starting at
 <em>4:14:00</em>) via the recording of the workshop, with the video embedded below.
 Alternatively, you can view the talk on <a class="reference external" href="https://www.youtube.com/watch?v=GMN4TmFRwl4">YouTube</a>.
 The slides used for the presentation are published as
 <a class="reference internal" href="slides/yowt_slides.html#sec-slides"><span class="std std-ref">part of this online document</span></a>.</p>
-<div class="section" id="slides">
-<h3>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">¶</a></h3>
+<section id="slides">
+<h3>Slides<a class="headerlink" href="#slides" title="Permalink to this headline">#</a></h3>
 <p><a class="reference internal" href="slides/yowt_slides.html#sec-slides"><span class="std std-numref">Section 6</span></a>: <a class="reference internal" href="slides/yowt_slides.html#sec-slides"><span class="std std-ref">Slides</span></a> renders the slides
 as an article page.
 To view this content as a <em>static</em> (<a class="reference external" href="https://github.com/hakimel/reveal.js/">reveal.js</a>) or an <em>interactive</em>
 (<a class="reference external" href="https://github.com/hakimel/reveal.js/">reveal.js</a> and <a class="reference external" href="https://rise.readthedocs.io/en/stable/">RISE</a>; launched via Jupyter Notebook delivered through
 MyBinder) presentation use these buttons.</p>
 <p><a class="btn btn-outline-primary"
-   href="https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html"><span class="fas fa-tv"></span> <b>Static</b> Slides</a>
+   href="https://so-cool.github.io/you-only-write-thrice/src/slides/yowt_slides.slides.html"><span class="fa fa-tv,style=fas"></span> <b>Static</b> Slides</a>
 <a class="btn btn-outline-primary"
-    href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"><span class="fas fa-sync-alt"></span> <b>Interactive</b> Slides</a></p>
+    href="https://mybinder.org/v2/gh/so-cool/you-only-write-thrice/master?urlpath=tree/src/slides/yowt_slides.md"><span class="fa fa-sync-alt,style=fas"></span> <b>Interactive</b> Slides</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>More instructions on how to launch the slides are available in
 <a class="reference internal" href="slides/yowt_slides.html#sec-slides"><span class="std std-numref">Section 6</span></a>.</p>
 </div>
-</div>
-<div class="section" id="slideslive">
-<h3>SlidesLive<a class="headerlink" href="#slideslive" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="slideslive">
+<h3>SlidesLive<a class="headerlink" href="#slideslive" title="Permalink to this headline">#</a></h3>
 <!-- SlidesLive -->
 <div id="presentation-embed-38956531"></div>
 <script src='https://slideslive.com/embed_presentation.js'></script>
@@ -426,10 +623,10 @@ MyBinder) presentation use these buttons.</p>
 </script>
 <br>
 <p><a class="btn btn-outline-danger"
-   href="https://slideslive.com/38956531"><span class="fas fa-chalkboard-teacher"></span> Workshop Presentation (SlidesLive)</a></p>
-</div>
-<div class="section" id="youtube">
-<h3>YouTube<a class="headerlink" href="#youtube" title="Permalink to this headline">¶</a></h3>
+   href="https://slideslive.com/38956531"><span class="fa fa-chalkboard-teacher,style=fas"></span> Workshop Presentation (SlidesLive)</a></p>
+</section>
+<section id="youtube">
+<h3>YouTube<a class="headerlink" href="#youtube" title="Permalink to this headline">#</a></h3>
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
 <!--width="560" height="315"-->
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
@@ -442,36 +639,36 @@ MyBinder) presentation use these buttons.</p>
 </div>
 <br>
 <p><a class="btn btn-outline-danger"
-   href="https://www.youtube.com/watch?v=GMN4TmFRwl4f"><span class="fab fa-youtube"></span> Workshop Presentation (YouTube)</a></p>
-</div>
-</div>
-<div class="section" id="poster">
-<h2>Poster<a class="headerlink" href="#poster" title="Permalink to this headline">¶</a></h2>
+   href="https://www.youtube.com/watch?v=GMN4TmFRwl4f"><span class="fa fa-youtube,style=fab"></span> Workshop Presentation (YouTube)</a></p>
+</section>
+</section>
+<section id="poster">
+<h2>Poster<a class="headerlink" href="#poster" title="Permalink to this headline">#</a></h2>
 <a href="poster/yowt_poster.pdf">
 <p><img alt="poster" src="../_images/yowt_poster.jpg" /></p>
 </a>
 <p><a class="btn btn-outline-primary"
-   href="poster/yowt_poster.pdf"><span class="fas fa-file-pdf"></span> Poster</a></p>
-</div>
-<div class="section" id="citation">
-<h2>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-BibTeX notranslate"><div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">sokol2021you</span><span class="p">,</span>
-  <span class="na">title</span>     <span class="p">=</span> <span class="s">{{Y}ou {O}nly {W}rite {T}hrice:</span>
+   href="poster/yowt_poster.pdf"><span class="fa fa-file-pdf,style=fas"></span> Poster</a></p>
+</section>
+<section id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">#</a></h2>
+<div class="highlight-BibTeX notranslate"><div class="highlight"><pre><span></span><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">sokol2021you</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">title</span><span class="w">     </span><span class="p">=</span><span class="w"> </span><span class="s">{{Y}ou {O}nly {W}rite {T}hrice:</span>
 <span class="s">               {C}reating {D}ocuments, {C}omputational {N}otebooks and</span>
-<span class="s">               {P}resentations {F}rom a {S}ingle {S}ource}</span><span class="p">,</span>
-  <span class="na">author</span>    <span class="p">=</span> <span class="s">{Sokol, Kacper and Flach, Peter}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{{B}eyond static papers:</span>
+<span class="s">               {P}resentations {F}rom a {S}ingle {S}ource}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">author</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="s">{Sokol, Kacper and Flach, Peter}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">booktitle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{B}eyond static papers:</span>
 <span class="s">               {R}ethinking how we share scientific understanding in {ML} --</span>
-<span class="s">               {ICLR} 2021 workshop}</span><span class="p">,</span>
-  <span class="na">year</span>      <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
-  <span class="na">note</span>      <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2107.06639}</span><span class="p">,</span>
-  <span class="na">doi</span>       <span class="p">=</span> <span class="s">{10.5281/zenodo.5106062}</span>
-<span class="p">}</span>
+<span class="s">               {ICLR} 2021 workshop}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">year</span><span class="w">      </span><span class="p">=</span><span class="w"> </span><span class="s">{2021}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">note</span><span class="w">      </span><span class="p">=</span><span class="w"> </span><span class="s">{arXiv preprint arXiv:2107.06639}</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="na">doi</span><span class="w">       </span><span class="p">=</span><span class="w"> </span><span class="s">{10.5281/zenodo.5106062}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="about">
-<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="about">
+<h2>About<a class="headerlink" href="#about" title="Permalink to this headline">#</a></h2>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>The <a class="reference external" href="https://github.com/So-Cool/you-only-write-thrice/releases/tag/v1">original version</a> of this exhibit was based on <em>ProbLog code boxes</em>.
@@ -485,10 +682,10 @@ at <a class="reference external" href="https://problog-template.simply-logical.s
 book see the <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice#readme"><code class="docutils literal notranslate"><span class="pre">README.md</span></code></a> file included in the [GitHub repository] –
 <a class="reference external" href="https://github.com/so-cool/you-only-write-thrice">so-cool/you-only-write-thrice</a> – that holds the source of this book.</p>
 </div>
-</div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -512,8 +709,10 @@ book see the <a class="reference external" href="https://github.com/so-cool/you-
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
 <div class='prev-next-area'>
     <a class='right-next' id="next-link" href="text/source_multiplicity.html" title="next page">
     <div class="prev-next-info">
@@ -523,31 +722,33 @@ book see the <a class="reference external" href="https://github.com/so-cool/you-
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By <a href="mailto:K.Sokol@bristol.ac.uk">Kacper Sokol</a> and <a href="mailto:Peter.Flach@bristol.ac.uk">Peter Flach</a>, University of Bristol, United Kingdom
 <br/>
-        
-            &copy; Copyright 2021.<br/>
-          <div class="extra_footer">
-            This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
+  
+      &copy; Copyright 2021.<br/>
+    <div class="extra_footer">
+      This <a href="https://jupyterbook.org/intro.html">Jupyter Book</a> article is an exhibit accompanying the <a href="https://openreview.net/forum?id=i4zpuNRiU4G">"You Only Write Thrice"</a> paper published at <a href="https://rethinkingmlpapers.github.io/">Rethinking ML Papers – ICLR 2021 Workshop</a>. The source of this article is available on <a href="https://github.com/so-cool/you-only-write-thrice">GitHub</a>.
 
-          </div>
-      </p>
     </div>
-  </footer>
-</main>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
